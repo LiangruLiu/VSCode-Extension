@@ -1,0 +1,42 @@
+待办：（这是写给我自己看的。后面几段才是有用信息）
+jupyter结果的白色太亮了
+E.3,W.3,I.3的透明度需要降低，比如W.3的问题。但要注意会不会对其他有影响
+文字饱和度降低
+Operator Mono字体
+右键菜单等白色边框改成不透明灰
+运算符和函数参数改成紫色
+class和struct由绿偏黄改为绿偏蓝
+小图标颜色修改
+set
+设置中的Snippet Suggestions
+还差一些sel需要修改
+
+
+可从命令面板中调出的工具：
+Reload Window 可以重新加载窗口以应用插件代码更新
+Inspect Editor Tokens and Scopes 可以查看语法着色
+Generate Color Theme From Current Settings 可以生成当前主题配置
+Toggle Developer Tools 可以检查文字对比度，可以查看插件报错信息和插件代码中console.log()输出的内容
+
+打开控制台，也可直接使用集成终端，但要注意选择cmd而非pwsh
+更新vsce：
+npm install -g vsce
+查看所有可用命令：
+vsce --help
+打包发布：
+vsce package
+vsce publish
+
+参考网站：
+插件开发：
+https://marketplace.visualstudio.com/
+https://www.cnblogs.com/liuxianan/p/vscode-plugin-publish.html
+https://www.cnblogs.com/liuxianan/p/vscode-plugin-package-json.html
+https://blog.csdn.net/Suwanqing_su/article/details/105947156
+界面颜色：
+https://blog.csdn.net/dscn15848078969/article/details/107578108
+语法高亮颜色：
+https://www.sublimetext.com/docs/3/scope_naming.html#variable
+https://macromates.com/manual/en/language_grammars#naming_conventions
+https://blog.csdn.net/Suwanqing_su/article/details/105945290
+https://www.cnblogs.com/maojs/p/13901828.html
