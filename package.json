@@ -1,0 +1,133 @@
+{
+	"name": "customize-toolbar",
+	"displayName": "Customize Toolbar",
+	"description": "Add custom buttons to the toolbar",
+	"categories": [
+		"Other",
+		"Visualization",
+		"Programming Languages"
+	],
+	"keywords": [
+		"shortcut",
+		"button",
+		"tool",
+		"toolbar",
+		"menu",
+		"menubar",
+		"bar",
+		"editor",
+		"terminal",
+		"status"
+	],
+	"publisher": "liangruliu",
+	"icon": "images/icon.png",
+	"version": "0.1.2",
+	"engines": {
+		"vscode": "^1.60.0"
+	},
+	"capabilities": {
+		"untrustedWorkspaces": {
+			"supported": true
+		}
+	},
+	"main": "./sources/extension",
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Customize Toolbar",
+			"properties": {
+				"CustomizeToolbar.buttonConfig": {
+					"order": 1,
+					"markdownDescription": "Go to `settings.json` to configure the toolbar buttons. \n\n After the changes, you need to restart VSCode twice as prompted. \n\n If the actual display doesn't match the configuration file due to plugin update or other unknown reasons, you can execute `Customize Toolbar: Refresh` in the [command palette](command:workbench.action.showCommands) ( or simply click this button: [[REFRESH]](command:customize-toolbar.refresh) ).",
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"name": {
+								"markdownDescription": "The name of the button to display on hover.",
+								"type": "string"
+							},
+							"icon": {
+								"markdownDescription": "**A.** A theme icon reference, like `\"\\$(zap)\" (no slash)` (see [doc](https://code.visualstudio.com/api/references/icons-in-labels)) \n\n **B.** An object with absolute paths for light and dark themes, like `{ \"light\": \".../a.svg\", \"dark\": \".../b.svg\" }` (use `builtin` to represent the root directory of this plugin's built-in icons.)",
+								"type": [
+									"string",
+									"object"
+								]
+							},
+							"command": {
+								"markdownDescription": "The command executed by pressing the button. \n\n Note that you need to fill in the **identifier** instead of the name. Specific information can be found in the [keyboard shortcut list](command:workbench.action.openGlobalKeybindings). \n\n For example, to expand or retract the terminal, write `workbench.action.terminal.toggleTerminal` instead of `view.toggleTerminal`.",
+								"type": "string"
+							},
+							"when": {
+								"markdownDescription": "(Optional) If a regular expression is given, the button will be displayed only if the filename matches it. \n\n For example: `\".*\\\\.txt|txt\\\\.md\"` matches files with a \".txt\" file extension or a \"txt.md\" file name; `\"(?<!\\\\.txt)$\"` matches files with a file extension other than \".txt\".",
+								"type": "string"
+							}
+						},
+						"additionalProperties": false,
+						"default": {
+							"name": "",
+							"icon": "$()",
+							"command": "",
+							"when": ""
+						}
+					},
+					"default": [
+						{
+							"name": "Toggle Terminal",
+							"icon": {
+								"light": "builtin/terminal_light.svg",
+								"dark": "builtin/terminal_dark.svg"
+							},
+							"command": "workbench.action.terminal.toggleTerminal"
+						},
+						{
+							"name": "Save All",
+							"icon": {
+								"light": "builtin/save_dark.svg",
+								"dark": "builtin/save_dark.svg"
+							},
+							"command": "workbench.action.files.saveAll"
+						},
+						{
+							"name": "Cursor Align",
+							"icon": {
+								"light": "builtin/cursorAlign_dark.svg",
+								"dark": "builtin/cursorAlign_dark.svg"
+							},
+							"command": "yo1dog.cursor-align.alignCursors"
+						},
+						{
+							"name": "Toggle Bookmarks",
+							"icon": {
+								"light": "builtin/bookmark_dark.svg",
+								"dark": "builtin/bookmark_dark.svg"
+							},
+							"command": "bookmarks.toggle"
+						}
+					]
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "customize-toolbar.refresh",
+				"category": "Customize Toolbar",
+				"title": "Refresh"
+			}
+		],
+		"keybindings": [],
+		"menus": {
+			"editor/title": [],
+			"editor/title/run": []
+		}
+	},
+	"__metadata": {
+		"id": "b1e34ac6-c320-47fe-bb53-c02766c856e4",
+		"publisherDisplayName": "Liangru Liu",
+		"publisherId": "38d3078a-e2e3-4217-8e44-6a8b6cf6faaf",
+		"isPreReleaseVersion": false
+	}
+}

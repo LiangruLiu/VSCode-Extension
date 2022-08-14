@@ -1,0 +1,43 @@
+// 对于一些简单的结构，在package.json中这样写，就可以在设置中可视化编辑
+{
+	"properties": {
+		"CustomizeToolbar.testList": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"default": [
+				"string1",
+				"string2"
+			]
+		},
+		"CustomizeToolbar.testDict": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "string"
+			},
+			"default": {
+				"key1": "string1",
+				"key2": "string2"
+			}
+		},
+		"CustomizeToolbar.testDict2": {
+			"type": "object",
+			"properties": {
+				"key1": {
+					"type": "string",
+					"default": "string1"
+				},
+				"key2": {
+					"type": "string",
+					"default": "string2"
+				}
+			},
+			"default": {
+				"key1": "string1",
+				"key2": "string2"
+			},
+			"additionalProperties": false
+		}
+	}
+}
