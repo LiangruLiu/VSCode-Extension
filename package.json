@@ -21,7 +21,11 @@
 	],
 	"publisher": "liangruliu",
 	"icon": "images/icon.png",
-	"version": "0.1.2",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/LiangruLiu/VSCode-Extension/tree/customize-toolbar"
+	},
+	"version": "0.1.3",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
@@ -51,7 +55,7 @@
 								"type": "string"
 							},
 							"icon": {
-								"markdownDescription": "**A.** A theme icon reference, like `\"\\$(zap)\" (no slash)` (see [doc](https://code.visualstudio.com/api/references/icons-in-labels)) \n\n **B.** An object with absolute paths for light and dark themes, like `{ \"light\": \".../a.svg\", \"dark\": \".../b.svg\" }` (use `builtin` to represent the root directory of this plugin's built-in icons.)",
+								"markdownDescription": "**A.** A theme icon reference, like \n\n `\"zap\"` \n\n (see [official doc](https://code.visualstudio.com/api/references/icons-in-labels#icon-listing) and extension [Octicons Refsrc](https://marketplace.visualstudio.com/items?itemName=liangruliu.octicons-refsrc) \n\n **B.** An object with absolute paths for light and dark themes, like \n\n `{ \"light\": \".../a.svg\", \"dark\": \".../b.svg\" }` \n\n (use `builtin` to represent the root directory of this plugin's built-in icons.)",
 								"type": [
 									"string",
 									"object"
@@ -69,7 +73,7 @@
 						"additionalProperties": false,
 						"default": {
 							"name": "",
-							"icon": "$()",
+							"icon": "",
 							"command": "",
 							"when": ""
 						}

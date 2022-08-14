@@ -1,4 +1,4 @@
-// 20220708
+// 20220815
 "use strict"
 const vscode = require ("vscode")  // 请忽略提示，千万不要点击自动修复
 const fs = require ("fs")
@@ -22,7 +22,7 @@ exports.updateButtonConfig = function (context, btnCfg) {
 	let keybindings = []
 	let buttons = []
 	for (let idx = 0; idx < btnCfg.length; idx ++) {
-		const icon = btnCfg[idx]["icon"]
+		let icon = btnCfg[idx]["icon"]
 		if (typeof icon === "object")
 			for (const key in icon)
 				if (icon[key].startsWith ("builtin/")) {
@@ -32,6 +32,7 @@ exports.updateButtonConfig = function (context, btnCfg) {
 					fs.copyFileSync (icon[key], path.join (userIcoDirForCode, newName))
 					icon[key] = path.join (userIcoDirForCfg, newName)
 				}
+		else icon = `$(${icon})`
 		const cmdName = `customize-toolbar.command-${idx+1}`
 		commands[idx] = {
 			"command": cmdName,
