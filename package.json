@@ -1,0 +1,244 @@
+{
+	"name": "clock-and-battery",
+	"displayName": "Clock And Battery",
+	"description": "Add custom buttons to the toolbar",
+	"categories": [
+		"Other",
+		"Visualization"
+	],
+	"keywords": [
+		"shortcut",
+		"button",
+		"tool",
+		"toolbar",
+		"menu",
+		"menubar",
+		"bar",
+		"editor",
+		"terminal",
+		"status"
+	],
+	"publisher": "liangruliu",
+	"icon": "images/icon.png",
+	"version": "0.1.0",
+	"engines": {
+		"vscode": "^1.60.0"
+	},
+	"capabilities": {
+		"untrustedWorkspaces": {
+			"supported": true
+		}
+	},
+	"main": "./sources/extension",
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Clock And Battery",
+			"properties": {
+				"ClockAndBattery.clock.active": {
+					"order": 1,
+					"markdownDescription": "%config.clock.active%",
+					"type": "boolean",
+					"default": true
+				},
+				"ClockAndBattery.battery.active": {
+					"order": 5,
+					"markdownDescription": "%config.battery.active%",
+					"type": "boolean",
+					"default": true
+				},
+				"ClockAndBattery.clock.position": {
+					"order": 2,
+					"markdownDescription": "%config.clock.position%",
+					"type": "object",
+					"properties": {
+						"Alignment": {
+							"type": "string",
+							"enum": [
+								"Left",
+								"Right"
+							]
+						},
+						"Priority": {
+							"type": "integer"
+						}
+					},
+					"default": {
+						"Alignment": "Right",
+						"Priority": 0
+					},
+					"additionalProperties": false
+				},
+				"ClockAndBattery.battery.position": {
+					"order": 6,
+					"markdownDescription": "%config.battery.position%",
+					"type": "object",
+					"properties": {
+						"Alignment": {
+							"type": "string",
+							"enum": [
+								"Left",
+								"Right"
+							]
+						},
+						"Priority": {
+							"type": "integer"
+						}
+					},
+					"default": {
+						"Alignment": "Right",
+						"Priority": 1
+					},
+					"additionalProperties": false
+				},
+				"ClockAndBattery.clock.format": {
+					"order": 3,
+					"markdownDescription": "%config.clock.format%",
+					"type": "object",
+					"properties": {
+						"Icon Sequence": {
+							"type": "string",
+							"pattern": "(?:^\\d?\\d:\\d?\\d,[\\w-]*,\\d?\\d:\\d?\\d,[\\w-]*$)|(?:^$)"
+						},
+						"Display Format": {
+							"type": "string"
+						},
+						"Insert Format": {
+							"type": "string"
+						}
+					},
+					"default": {
+						"Icon Sequence": "7:30,cab-sun,19:30,cab-moon",
+						"Display Format": "HH:MM",
+						"Insert Format": "mmm.dS.ddd  hh:MM TT"
+					},
+					"additionalProperties": false
+				},
+				"ClockAndBattery.battery.format": {
+					"order": 7,
+					"markdownDescription": "%config.battery.format%",
+					"type": "object",
+					"properties": {
+						"Indicator Type": {
+							"type": "string",
+							"enum": [
+								"Icon",
+								"Text"
+							]
+						},
+						"Icon Sequence": {
+							"type": "string",
+							"pattern": "(?:^[\\w-]*,[\\w-]*,[\\w-]*,[\\w-]*$)|(?:^$)"
+						},
+						"Text Sequence": {
+							"type": "string",
+							"pattern": "(?:\\S*,\\S*,\\S*,\\S*$)|(?:^$)"
+						},
+						"Low Battery Threshold": {
+							"type": "integer"
+						}
+					},
+					"default": {
+						"Indicator Type": "Icon",
+						"Icon Sequence": "cab-nobat,cab-lowbat,cab-battery,cab-charging",
+						"Text Sequence": "?,!,,+",
+						"Low Battery Threshold": 40
+					},
+					"additionalProperties": false
+				},
+				"ClockAndBattery.clock.updateInterval": {
+					"order": 4,
+					"markdownDescription": "%config.clock.updateInterval%",
+					"type": "integer",
+					"minimum": 500,
+					"default": 1000
+				},
+				"ClockAndBattery.battery.updateInterval": {
+					"order": 8,
+					"markdownDescription": "%config.battery.updateInterval%",
+					"type": "integer",
+					"minimum": 1000,
+					"default": 5000
+				},
+				"ClockAndBattery.test.active": {
+					"order": 9,
+					"markdownDescription": "%config.test.active%",
+					"type": "boolean",
+					"default": false
+				},
+				"ClockAndBattery.test.iconSequence": {
+					"order": 10,
+					"markdownDescription": "%config.test.iconSequence%",
+					"type": "string",
+					"pattern": "(?:^$)|(?:^[\\w-]+(?:,[\\w-]+)*$)",
+					"default": "cab-clock,cab-sun,cab-moon,cab-nobat,cab-lowbat,cab-battery,cab-charging"
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "clock-and-battery.insert-date-time",
+				"category": "Clock And Battery",
+				"title": "Insert Date Time"
+			}
+		],
+		"icons": {
+			"cab-clock": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/cabicon.woff",
+					"fontCharacter": "\uF001"
+				}
+			},
+			"cab-sun": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/cabicon.woff",
+					"fontCharacter": "\uF002"
+				}
+			},
+			"cab-moon": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/cabicon.woff",
+					"fontCharacter": "\uF003"
+				}
+			},
+			"cab-nobat": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/cabicon.woff",
+					"fontCharacter": "\uF004"
+				}
+			},
+			"cab-lowbat": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/cabicon.woff",
+					"fontCharacter": "\uF005"
+				}
+			},
+			"cab-battery": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/cabicon.woff",
+					"fontCharacter": "\uF006"
+				}
+			},
+			"cab-charging": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/cabicon.woff",
+					"fontCharacter": "\uF007"
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"dateformat": "^4.6.3",
+		"systeminformation": "^5.12.2"
+	}
+}
