@@ -1,1 +1,1 @@
-# VSCode-Extension
+# VSCode Extension
