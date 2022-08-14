@@ -1,0 +1,3648 @@
+{
+	"name": "octicons-refsrc",
+	"displayName": "Octicons Refsrc",
+	"description": "Add custom buttons to the toolbar",
+	"categories": [
+		"Other",
+		"Visualization"
+	],
+	"keywords": [
+		"shortcut",
+		"button",
+		"tool",
+		"toolbar",
+		"menu",
+		"menubar",
+		"bar",
+		"editor",
+		"terminal",
+		"status"
+	],
+	"publisher": "liangruliu",
+	"icon": "images/icon.png",
+	"version": "0.1.0",
+	"preview": true,
+	"engines": {
+		"vscode": "^1.60.0"
+	},
+	"capabilities": {
+		"untrustedWorkspaces": {
+			"supported": true
+		}
+	},
+	"contributes": {
+		"icons": {
+			"octicons-accessibility-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F101"
+				}
+			},
+			"octicons-alert-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F102"
+				}
+			},
+			"octicons-alert-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F103"
+				}
+			},
+			"octicons-alert-fill-12": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F104"
+				}
+			},
+			"octicons-apps-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F105"
+				}
+			},
+			"octicons-archive-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F106"
+				}
+			},
+			"octicons-archive-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F107"
+				}
+			},
+			"octicons-arrow-both-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F108"
+				}
+			},
+			"octicons-arrow-both-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F109"
+				}
+			},
+			"octicons-arrow-down-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F10A"
+				}
+			},
+			"octicons-arrow-down-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F10B"
+				}
+			},
+			"octicons-arrow-down-left-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F10C"
+				}
+			},
+			"octicons-arrow-down-right-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F10D"
+				}
+			},
+			"octicons-arrow-left-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F10E"
+				}
+			},
+			"octicons-arrow-left-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F10F"
+				}
+			},
+			"octicons-arrow-right-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F110"
+				}
+			},
+			"octicons-arrow-right-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F111"
+				}
+			},
+			"octicons-arrow-switch-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F112"
+				}
+			},
+			"octicons-arrow-switch-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F113"
+				}
+			},
+			"octicons-arrow-up-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F114"
+				}
+			},
+			"octicons-arrow-up-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F115"
+				}
+			},
+			"octicons-arrow-up-left-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F116"
+				}
+			},
+			"octicons-arrow-up-right-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F117"
+				}
+			},
+			"octicons-beaker-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F118"
+				}
+			},
+			"octicons-beaker-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F119"
+				}
+			},
+			"octicons-bell-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F11A"
+				}
+			},
+			"octicons-bell-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F11B"
+				}
+			},
+			"octicons-bell-fill-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F11C"
+				}
+			},
+			"octicons-bell-fill-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F11D"
+				}
+			},
+			"octicons-bell-slash-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F11E"
+				}
+			},
+			"octicons-bell-slash-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F11F"
+				}
+			},
+			"octicons-blocked-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F120"
+				}
+			},
+			"octicons-blocked-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F121"
+				}
+			},
+			"octicons-bold-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F122"
+				}
+			},
+			"octicons-bold-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F123"
+				}
+			},
+			"octicons-book-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F124"
+				}
+			},
+			"octicons-book-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F125"
+				}
+			},
+			"octicons-bookmark-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F126"
+				}
+			},
+			"octicons-bookmark-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F127"
+				}
+			},
+			"octicons-bookmark-fill-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F128"
+				}
+			},
+			"octicons-bookmark-slash-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F129"
+				}
+			},
+			"octicons-bookmark-slash-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F12A"
+				}
+			},
+			"octicons-bookmark-slash-fill-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F12B"
+				}
+			},
+			"octicons-briefcase-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F12C"
+				}
+			},
+			"octicons-briefcase-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F12D"
+				}
+			},
+			"octicons-broadcast-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F12E"
+				}
+			},
+			"octicons-broadcast-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F12F"
+				}
+			},
+			"octicons-browser-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F130"
+				}
+			},
+			"octicons-browser-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F131"
+				}
+			},
+			"octicons-bug-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F132"
+				}
+			},
+			"octicons-bug-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F133"
+				}
+			},
+			"octicons-cache-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F134"
+				}
+			},
+			"octicons-calendar-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F135"
+				}
+			},
+			"octicons-calendar-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F136"
+				}
+			},
+			"octicons-check-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F137"
+				}
+			},
+			"octicons-check-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F138"
+				}
+			},
+			"octicons-check-circle-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F139"
+				}
+			},
+			"octicons-check-circle-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F13A"
+				}
+			},
+			"octicons-check-circle-fill-12": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F13B"
+				}
+			},
+			"octicons-check-circle-fill-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F13C"
+				}
+			},
+			"octicons-check-circle-fill-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F13D"
+				}
+			},
+			"octicons-checkbox-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F13E"
+				}
+			},
+			"octicons-checkbox-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F13F"
+				}
+			},
+			"octicons-checklist-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F140"
+				}
+			},
+			"octicons-checklist-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F141"
+				}
+			},
+			"octicons-chevron-down-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F142"
+				}
+			},
+			"octicons-chevron-down-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F143"
+				}
+			},
+			"octicons-chevron-left-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F144"
+				}
+			},
+			"octicons-chevron-left-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F145"
+				}
+			},
+			"octicons-chevron-right-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F146"
+				}
+			},
+			"octicons-chevron-right-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F147"
+				}
+			},
+			"octicons-chevron-up-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F148"
+				}
+			},
+			"octicons-chevron-up-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F149"
+				}
+			},
+			"octicons-circle-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F14A"
+				}
+			},
+			"octicons-circle-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F14B"
+				}
+			},
+			"octicons-circle-slash-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F14C"
+				}
+			},
+			"octicons-circle-slash-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F14D"
+				}
+			},
+			"octicons-clock-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F14E"
+				}
+			},
+			"octicons-clock-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F14F"
+				}
+			},
+			"octicons-cloud-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F150"
+				}
+			},
+			"octicons-cloud-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F151"
+				}
+			},
+			"octicons-cloud-offline-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F152"
+				}
+			},
+			"octicons-cloud-offline-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F153"
+				}
+			},
+			"octicons-code-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F154"
+				}
+			},
+			"octicons-code-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F155"
+				}
+			},
+			"octicons-code-of-conduct-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F156"
+				}
+			},
+			"octicons-code-of-conduct-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F157"
+				}
+			},
+			"octicons-code-review-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F158"
+				}
+			},
+			"octicons-code-review-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F159"
+				}
+			},
+			"octicons-code-square-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F15A"
+				}
+			},
+			"octicons-code-square-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F15B"
+				}
+			},
+			"octicons-codescan-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F15C"
+				}
+			},
+			"octicons-codescan-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F15D"
+				}
+			},
+			"octicons-codescan-checkmark-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F15E"
+				}
+			},
+			"octicons-codescan-checkmark-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F15F"
+				}
+			},
+			"octicons-codespaces-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F160"
+				}
+			},
+			"octicons-codespaces-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F161"
+				}
+			},
+			"octicons-columns-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F162"
+				}
+			},
+			"octicons-columns-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F163"
+				}
+			},
+			"octicons-command-palette-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F164"
+				}
+			},
+			"octicons-command-palette-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F165"
+				}
+			},
+			"octicons-comment-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F166"
+				}
+			},
+			"octicons-comment-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F167"
+				}
+			},
+			"octicons-comment-discussion-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F168"
+				}
+			},
+			"octicons-comment-discussion-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F169"
+				}
+			},
+			"octicons-commit-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F16A"
+				}
+			},
+			"octicons-container-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F16B"
+				}
+			},
+			"octicons-container-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F16C"
+				}
+			},
+			"octicons-copilot-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F16D"
+				}
+			},
+			"octicons-copilot-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F16E"
+				}
+			},
+			"octicons-copilot-48": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F16F"
+				}
+			},
+			"octicons-copilot-96": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F170"
+				}
+			},
+			"octicons-copilot-error-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F171"
+				}
+			},
+			"octicons-copilot-warning-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F172"
+				}
+			},
+			"octicons-copy-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F173"
+				}
+			},
+			"octicons-copy-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F174"
+				}
+			},
+			"octicons-cpu-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F175"
+				}
+			},
+			"octicons-cpu-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F176"
+				}
+			},
+			"octicons-credit-card-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F177"
+				}
+			},
+			"octicons-credit-card-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F178"
+				}
+			},
+			"octicons-cross-reference-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F179"
+				}
+			},
+			"octicons-cross-reference-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F17A"
+				}
+			},
+			"octicons-dash-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F17B"
+				}
+			},
+			"octicons-dash-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F17C"
+				}
+			},
+			"octicons-database-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F17D"
+				}
+			},
+			"octicons-database-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F17E"
+				}
+			},
+			"octicons-dependabot-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F17F"
+				}
+			},
+			"octicons-dependabot-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F180"
+				}
+			},
+			"octicons-desktop-download-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F181"
+				}
+			},
+			"octicons-desktop-download-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F182"
+				}
+			},
+			"octicons-device-camera-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F183"
+				}
+			},
+			"octicons-device-camera-video-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F184"
+				}
+			},
+			"octicons-device-camera-video-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F185"
+				}
+			},
+			"octicons-device-desktop-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F186"
+				}
+			},
+			"octicons-device-desktop-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F187"
+				}
+			},
+			"octicons-device-mobile-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F188"
+				}
+			},
+			"octicons-device-mobile-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F189"
+				}
+			},
+			"octicons-diamond-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F18A"
+				}
+			},
+			"octicons-diamond-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F18B"
+				}
+			},
+			"octicons-diff-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F18C"
+				}
+			},
+			"octicons-diff-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F18D"
+				}
+			},
+			"octicons-diff-added-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F18E"
+				}
+			},
+			"octicons-diff-ignored-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F18F"
+				}
+			},
+			"octicons-diff-modified-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F190"
+				}
+			},
+			"octicons-diff-removed-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F191"
+				}
+			},
+			"octicons-diff-renamed-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F192"
+				}
+			},
+			"octicons-dot-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F193"
+				}
+			},
+			"octicons-dot-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F194"
+				}
+			},
+			"octicons-dot-fill-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F195"
+				}
+			},
+			"octicons-dot-fill-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F196"
+				}
+			},
+			"octicons-download-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F197"
+				}
+			},
+			"octicons-download-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F198"
+				}
+			},
+			"octicons-duplicate-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F199"
+				}
+			},
+			"octicons-duplicate-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F19A"
+				}
+			},
+			"octicons-ellipsis-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F19B"
+				}
+			},
+			"octicons-eye-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F19C"
+				}
+			},
+			"octicons-eye-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F19D"
+				}
+			},
+			"octicons-eye-closed-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F19E"
+				}
+			},
+			"octicons-eye-closed-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F19F"
+				}
+			},
+			"octicons-feed-discussion-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1A0"
+				}
+			},
+			"octicons-feed-forked-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1A1"
+				}
+			},
+			"octicons-feed-heart-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1A2"
+				}
+			},
+			"octicons-feed-merged-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1A3"
+				}
+			},
+			"octicons-feed-person-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1A4"
+				}
+			},
+			"octicons-feed-repo-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1A5"
+				}
+			},
+			"octicons-feed-rocket-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1A6"
+				}
+			},
+			"octicons-feed-star-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1A7"
+				}
+			},
+			"octicons-feed-tag-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1A8"
+				}
+			},
+			"octicons-feed-trophy-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1A9"
+				}
+			},
+			"octicons-file-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1AA"
+				}
+			},
+			"octicons-file-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1AB"
+				}
+			},
+			"octicons-file-added-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1AC"
+				}
+			},
+			"octicons-file-badge-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1AD"
+				}
+			},
+			"octicons-file-binary-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1AE"
+				}
+			},
+			"octicons-file-binary-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1AF"
+				}
+			},
+			"octicons-file-code-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1B0"
+				}
+			},
+			"octicons-file-code-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1B1"
+				}
+			},
+			"octicons-file-diff-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1B2"
+				}
+			},
+			"octicons-file-diff-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1B3"
+				}
+			},
+			"octicons-file-directory-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1B4"
+				}
+			},
+			"octicons-file-directory-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1B5"
+				}
+			},
+			"octicons-file-directory-fill-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1B6"
+				}
+			},
+			"octicons-file-directory-fill-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1B7"
+				}
+			},
+			"octicons-file-directory-open-fill-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1B8"
+				}
+			},
+			"octicons-file-media-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1B9"
+				}
+			},
+			"octicons-file-moved-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1BA"
+				}
+			},
+			"octicons-file-removed-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1BB"
+				}
+			},
+			"octicons-file-submodule-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1BC"
+				}
+			},
+			"octicons-file-submodule-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1BD"
+				}
+			},
+			"octicons-file-symlink-file-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1BE"
+				}
+			},
+			"octicons-file-symlink-file-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1BF"
+				}
+			},
+			"octicons-file-zip-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1C0"
+				}
+			},
+			"octicons-file-zip-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1C1"
+				}
+			},
+			"octicons-filter-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1C2"
+				}
+			},
+			"octicons-filter-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1C3"
+				}
+			},
+			"octicons-flame-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1C4"
+				}
+			},
+			"octicons-flame-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1C5"
+				}
+			},
+			"octicons-fold-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1C6"
+				}
+			},
+			"octicons-fold-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1C7"
+				}
+			},
+			"octicons-fold-down-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1C8"
+				}
+			},
+			"octicons-fold-down-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1C9"
+				}
+			},
+			"octicons-fold-up-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1CA"
+				}
+			},
+			"octicons-fold-up-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1CB"
+				}
+			},
+			"octicons-gear-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1CC"
+				}
+			},
+			"octicons-gear-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1CD"
+				}
+			},
+			"octicons-gift-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1CE"
+				}
+			},
+			"octicons-gift-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1CF"
+				}
+			},
+			"octicons-git-branch-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1D0"
+				}
+			},
+			"octicons-git-branch-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1D1"
+				}
+			},
+			"octicons-git-commit-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1D2"
+				}
+			},
+			"octicons-git-commit-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1D3"
+				}
+			},
+			"octicons-git-compare-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1D4"
+				}
+			},
+			"octicons-git-compare-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1D5"
+				}
+			},
+			"octicons-git-merge-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1D6"
+				}
+			},
+			"octicons-git-merge-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1D7"
+				}
+			},
+			"octicons-git-merge-queue-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1D8"
+				}
+			},
+			"octicons-git-pull-request-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1D9"
+				}
+			},
+			"octicons-git-pull-request-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1DA"
+				}
+			},
+			"octicons-git-pull-request-closed-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1DB"
+				}
+			},
+			"octicons-git-pull-request-closed-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1DC"
+				}
+			},
+			"octicons-git-pull-request-draft-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1DD"
+				}
+			},
+			"octicons-git-pull-request-draft-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1DE"
+				}
+			},
+			"octicons-globe-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1DF"
+				}
+			},
+			"octicons-globe-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1E0"
+				}
+			},
+			"octicons-grabber-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1E1"
+				}
+			},
+			"octicons-grabber-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1E2"
+				}
+			},
+			"octicons-graph-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1E3"
+				}
+			},
+			"octicons-graph-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1E4"
+				}
+			},
+			"octicons-hash-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1E5"
+				}
+			},
+			"octicons-hash-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1E6"
+				}
+			},
+			"octicons-heading-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1E7"
+				}
+			},
+			"octicons-heading-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1E8"
+				}
+			},
+			"octicons-heart-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1E9"
+				}
+			},
+			"octicons-heart-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1EA"
+				}
+			},
+			"octicons-heart-fill-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1EB"
+				}
+			},
+			"octicons-heart-fill-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1EC"
+				}
+			},
+			"octicons-history-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1ED"
+				}
+			},
+			"octicons-history-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1EE"
+				}
+			},
+			"octicons-home-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1EF"
+				}
+			},
+			"octicons-home-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1F0"
+				}
+			},
+			"octicons-home-fill-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1F1"
+				}
+			},
+			"octicons-horizontal-rule-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1F2"
+				}
+			},
+			"octicons-horizontal-rule-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1F3"
+				}
+			},
+			"octicons-hourglass-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1F4"
+				}
+			},
+			"octicons-hourglass-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1F5"
+				}
+			},
+			"octicons-hubot-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1F6"
+				}
+			},
+			"octicons-hubot-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1F7"
+				}
+			},
+			"octicons-id-badge-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1F8"
+				}
+			},
+			"octicons-image-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1F9"
+				}
+			},
+			"octicons-image-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1FA"
+				}
+			},
+			"octicons-inbox-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1FB"
+				}
+			},
+			"octicons-inbox-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1FC"
+				}
+			},
+			"octicons-infinity-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1FD"
+				}
+			},
+			"octicons-infinity-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1FE"
+				}
+			},
+			"octicons-info-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F1FF"
+				}
+			},
+			"octicons-info-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F200"
+				}
+			},
+			"octicons-issue-closed-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F201"
+				}
+			},
+			"octicons-issue-closed-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F202"
+				}
+			},
+			"octicons-issue-draft-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F203"
+				}
+			},
+			"octicons-issue-draft-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F204"
+				}
+			},
+			"octicons-issue-opened-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F205"
+				}
+			},
+			"octicons-issue-opened-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F206"
+				}
+			},
+			"octicons-issue-reopened-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F207"
+				}
+			},
+			"octicons-issue-reopened-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F208"
+				}
+			},
+			"octicons-italic-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F209"
+				}
+			},
+			"octicons-italic-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F20A"
+				}
+			},
+			"octicons-iterations-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F20B"
+				}
+			},
+			"octicons-iterations-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F20C"
+				}
+			},
+			"octicons-kebab-horizontal-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F20D"
+				}
+			},
+			"octicons-kebab-horizontal-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F20E"
+				}
+			},
+			"octicons-key-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F20F"
+				}
+			},
+			"octicons-key-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F210"
+				}
+			},
+			"octicons-key-asterisk-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F211"
+				}
+			},
+			"octicons-law-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F212"
+				}
+			},
+			"octicons-law-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F213"
+				}
+			},
+			"octicons-light-bulb-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F214"
+				}
+			},
+			"octicons-light-bulb-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F215"
+				}
+			},
+			"octicons-link-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F216"
+				}
+			},
+			"octicons-link-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F217"
+				}
+			},
+			"octicons-link-external-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F218"
+				}
+			},
+			"octicons-link-external-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F219"
+				}
+			},
+			"octicons-list-ordered-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F21A"
+				}
+			},
+			"octicons-list-ordered-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F21B"
+				}
+			},
+			"octicons-list-unordered-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F21C"
+				}
+			},
+			"octicons-list-unordered-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F21D"
+				}
+			},
+			"octicons-location-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F21E"
+				}
+			},
+			"octicons-location-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F21F"
+				}
+			},
+			"octicons-lock-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F220"
+				}
+			},
+			"octicons-lock-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F221"
+				}
+			},
+			"octicons-log-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F222"
+				}
+			},
+			"octicons-logo-gist-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F223"
+				}
+			},
+			"octicons-logo-github-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F224"
+				}
+			},
+			"octicons-mail-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F225"
+				}
+			},
+			"octicons-mail-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F226"
+				}
+			},
+			"octicons-mark-github-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F227"
+				}
+			},
+			"octicons-markdown-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F228"
+				}
+			},
+			"octicons-megaphone-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F229"
+				}
+			},
+			"octicons-megaphone-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F22A"
+				}
+			},
+			"octicons-mention-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F22B"
+				}
+			},
+			"octicons-mention-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F22C"
+				}
+			},
+			"octicons-meter-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F22D"
+				}
+			},
+			"octicons-milestone-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F22E"
+				}
+			},
+			"octicons-milestone-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F22F"
+				}
+			},
+			"octicons-mirror-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F230"
+				}
+			},
+			"octicons-mirror-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F231"
+				}
+			},
+			"octicons-moon-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F232"
+				}
+			},
+			"octicons-moon-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F233"
+				}
+			},
+			"octicons-mortar-board-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F234"
+				}
+			},
+			"octicons-mortar-board-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F235"
+				}
+			},
+			"octicons-multi-select-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F236"
+				}
+			},
+			"octicons-multi-select-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F237"
+				}
+			},
+			"octicons-mute-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F238"
+				}
+			},
+			"octicons-mute-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F239"
+				}
+			},
+			"octicons-no-entry-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F23A"
+				}
+			},
+			"octicons-no-entry-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F23B"
+				}
+			},
+			"octicons-no-entry-fill-12": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F23C"
+				}
+			},
+			"octicons-north-star-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F23D"
+				}
+			},
+			"octicons-north-star-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F23E"
+				}
+			},
+			"octicons-note-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F23F"
+				}
+			},
+			"octicons-note-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F240"
+				}
+			},
+			"octicons-number-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F241"
+				}
+			},
+			"octicons-number-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F242"
+				}
+			},
+			"octicons-organization-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F243"
+				}
+			},
+			"octicons-organization-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F244"
+				}
+			},
+			"octicons-package-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F245"
+				}
+			},
+			"octicons-package-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F246"
+				}
+			},
+			"octicons-package-dependencies-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F247"
+				}
+			},
+			"octicons-package-dependencies-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F248"
+				}
+			},
+			"octicons-package-dependents-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F249"
+				}
+			},
+			"octicons-package-dependents-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F24A"
+				}
+			},
+			"octicons-paintbrush-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F24B"
+				}
+			},
+			"octicons-paper-airplane-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F24C"
+				}
+			},
+			"octicons-paper-airplane-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F24D"
+				}
+			},
+			"octicons-paperclip-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F24E"
+				}
+			},
+			"octicons-paperclip-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F24F"
+				}
+			},
+			"octicons-paste-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F250"
+				}
+			},
+			"octicons-paste-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F251"
+				}
+			},
+			"octicons-pencil-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F252"
+				}
+			},
+			"octicons-pencil-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F253"
+				}
+			},
+			"octicons-people-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F254"
+				}
+			},
+			"octicons-people-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F255"
+				}
+			},
+			"octicons-person-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F256"
+				}
+			},
+			"octicons-person-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F257"
+				}
+			},
+			"octicons-person-add-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F258"
+				}
+			},
+			"octicons-person-add-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F259"
+				}
+			},
+			"octicons-person-fill-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F25A"
+				}
+			},
+			"octicons-person-fill-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F25B"
+				}
+			},
+			"octicons-pin-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F25C"
+				}
+			},
+			"octicons-pin-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F25D"
+				}
+			},
+			"octicons-play-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F25E"
+				}
+			},
+			"octicons-play-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F25F"
+				}
+			},
+			"octicons-plug-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F260"
+				}
+			},
+			"octicons-plug-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F261"
+				}
+			},
+			"octicons-plus-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F262"
+				}
+			},
+			"octicons-plus-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F263"
+				}
+			},
+			"octicons-plus-circle-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F264"
+				}
+			},
+			"octicons-plus-circle-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F265"
+				}
+			},
+			"octicons-project-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F266"
+				}
+			},
+			"octicons-project-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F267"
+				}
+			},
+			"octicons-pulse-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F268"
+				}
+			},
+			"octicons-pulse-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F269"
+				}
+			},
+			"octicons-question-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F26A"
+				}
+			},
+			"octicons-question-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F26B"
+				}
+			},
+			"octicons-quote-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F26C"
+				}
+			},
+			"octicons-quote-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F26D"
+				}
+			},
+			"octicons-reply-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F26E"
+				}
+			},
+			"octicons-reply-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F26F"
+				}
+			},
+			"octicons-repo-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F270"
+				}
+			},
+			"octicons-repo-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F271"
+				}
+			},
+			"octicons-repo-clone-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F272"
+				}
+			},
+			"octicons-repo-deleted-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F273"
+				}
+			},
+			"octicons-repo-forked-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F274"
+				}
+			},
+			"octicons-repo-forked-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F275"
+				}
+			},
+			"octicons-repo-locked-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F276"
+				}
+			},
+			"octicons-repo-locked-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F277"
+				}
+			},
+			"octicons-repo-pull-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F278"
+				}
+			},
+			"octicons-repo-push-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F279"
+				}
+			},
+			"octicons-repo-push-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F27A"
+				}
+			},
+			"octicons-repo-template-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F27B"
+				}
+			},
+			"octicons-repo-template-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F27C"
+				}
+			},
+			"octicons-report-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F27D"
+				}
+			},
+			"octicons-report-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F27E"
+				}
+			},
+			"octicons-rocket-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F27F"
+				}
+			},
+			"octicons-rocket-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F280"
+				}
+			},
+			"octicons-rows-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F281"
+				}
+			},
+			"octicons-rows-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F282"
+				}
+			},
+			"octicons-rss-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F283"
+				}
+			},
+			"octicons-rss-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F284"
+				}
+			},
+			"octicons-ruby-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F285"
+				}
+			},
+			"octicons-ruby-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F286"
+				}
+			},
+			"octicons-screen-full-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F287"
+				}
+			},
+			"octicons-screen-full-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F288"
+				}
+			},
+			"octicons-screen-normal-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F289"
+				}
+			},
+			"octicons-screen-normal-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F28A"
+				}
+			},
+			"octicons-search-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F28B"
+				}
+			},
+			"octicons-search-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F28C"
+				}
+			},
+			"octicons-server-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F28D"
+				}
+			},
+			"octicons-server-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F28E"
+				}
+			},
+			"octicons-share-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F28F"
+				}
+			},
+			"octicons-share-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F290"
+				}
+			},
+			"octicons-share-android-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F291"
+				}
+			},
+			"octicons-share-android-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F292"
+				}
+			},
+			"octicons-shield-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F293"
+				}
+			},
+			"octicons-shield-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F294"
+				}
+			},
+			"octicons-shield-check-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F295"
+				}
+			},
+			"octicons-shield-check-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F296"
+				}
+			},
+			"octicons-shield-lock-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F297"
+				}
+			},
+			"octicons-shield-lock-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F298"
+				}
+			},
+			"octicons-shield-x-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F299"
+				}
+			},
+			"octicons-shield-x-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F29A"
+				}
+			},
+			"octicons-sidebar-collapse-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F29B"
+				}
+			},
+			"octicons-sidebar-collapse-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F29C"
+				}
+			},
+			"octicons-sidebar-expand-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F29D"
+				}
+			},
+			"octicons-sidebar-expand-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F29E"
+				}
+			},
+			"octicons-sign-in-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F29F"
+				}
+			},
+			"octicons-sign-in-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2A0"
+				}
+			},
+			"octicons-sign-out-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2A1"
+				}
+			},
+			"octicons-sign-out-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2A2"
+				}
+			},
+			"octicons-single-select-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2A3"
+				}
+			},
+			"octicons-single-select-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2A4"
+				}
+			},
+			"octicons-skip-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2A5"
+				}
+			},
+			"octicons-skip-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2A6"
+				}
+			},
+			"octicons-sliders-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2A7"
+				}
+			},
+			"octicons-smiley-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2A8"
+				}
+			},
+			"octicons-smiley-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2A9"
+				}
+			},
+			"octicons-sort-asc-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2AA"
+				}
+			},
+			"octicons-sort-asc-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2AB"
+				}
+			},
+			"octicons-sort-desc-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2AC"
+				}
+			},
+			"octicons-sort-desc-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2AD"
+				}
+			},
+			"octicons-square-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2AE"
+				}
+			},
+			"octicons-square-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2AF"
+				}
+			},
+			"octicons-square-fill-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2B0"
+				}
+			},
+			"octicons-square-fill-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2B1"
+				}
+			},
+			"octicons-squirrel-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2B2"
+				}
+			},
+			"octicons-squirrel-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2B3"
+				}
+			},
+			"octicons-stack-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2B4"
+				}
+			},
+			"octicons-stack-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2B5"
+				}
+			},
+			"octicons-star-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2B6"
+				}
+			},
+			"octicons-star-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2B7"
+				}
+			},
+			"octicons-star-fill-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2B8"
+				}
+			},
+			"octicons-star-fill-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2B9"
+				}
+			},
+			"octicons-stop-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2BA"
+				}
+			},
+			"octicons-stop-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2BB"
+				}
+			},
+			"octicons-stopwatch-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2BC"
+				}
+			},
+			"octicons-stopwatch-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2BD"
+				}
+			},
+			"octicons-strikethrough-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2BE"
+				}
+			},
+			"octicons-strikethrough-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2BF"
+				}
+			},
+			"octicons-sun-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2C0"
+				}
+			},
+			"octicons-sun-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2C1"
+				}
+			},
+			"octicons-sync-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2C2"
+				}
+			},
+			"octicons-sync-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2C3"
+				}
+			},
+			"octicons-tab-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2C4"
+				}
+			},
+			"octicons-tab-external-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2C5"
+				}
+			},
+			"octicons-table-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2C6"
+				}
+			},
+			"octicons-table-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2C7"
+				}
+			},
+			"octicons-tag-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2C8"
+				}
+			},
+			"octicons-tag-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2C9"
+				}
+			},
+			"octicons-tasklist-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2CA"
+				}
+			},
+			"octicons-tasklist-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2CB"
+				}
+			},
+			"octicons-telescope-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2CC"
+				}
+			},
+			"octicons-telescope-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2CD"
+				}
+			},
+			"octicons-telescope-fill-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2CE"
+				}
+			},
+			"octicons-telescope-fill-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2CF"
+				}
+			},
+			"octicons-terminal-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2D0"
+				}
+			},
+			"octicons-terminal-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2D1"
+				}
+			},
+			"octicons-three-bars-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2D2"
+				}
+			},
+			"octicons-thumbsdown-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2D3"
+				}
+			},
+			"octicons-thumbsdown-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2D4"
+				}
+			},
+			"octicons-thumbsup-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2D5"
+				}
+			},
+			"octicons-thumbsup-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2D6"
+				}
+			},
+			"octicons-tools-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2D7"
+				}
+			},
+			"octicons-tools-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2D8"
+				}
+			},
+			"octicons-trash-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2D9"
+				}
+			},
+			"octicons-trash-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2DA"
+				}
+			},
+			"octicons-triangle-down-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2DB"
+				}
+			},
+			"octicons-triangle-down-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2DC"
+				}
+			},
+			"octicons-triangle-left-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2DD"
+				}
+			},
+			"octicons-triangle-left-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2DE"
+				}
+			},
+			"octicons-triangle-right-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2DF"
+				}
+			},
+			"octicons-triangle-right-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2E0"
+				}
+			},
+			"octicons-triangle-up-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2E1"
+				}
+			},
+			"octicons-triangle-up-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2E2"
+				}
+			},
+			"octicons-trophy-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2E3"
+				}
+			},
+			"octicons-trophy-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2E4"
+				}
+			},
+			"octicons-typography-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2E5"
+				}
+			},
+			"octicons-typography-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2E6"
+				}
+			},
+			"octicons-unfold-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2E7"
+				}
+			},
+			"octicons-unfold-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2E8"
+				}
+			},
+			"octicons-unlock-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2E9"
+				}
+			},
+			"octicons-unlock-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2EA"
+				}
+			},
+			"octicons-unmute-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2EB"
+				}
+			},
+			"octicons-unmute-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2EC"
+				}
+			},
+			"octicons-unverified-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2ED"
+				}
+			},
+			"octicons-unverified-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2EE"
+				}
+			},
+			"octicons-upload-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2EF"
+				}
+			},
+			"octicons-upload-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2F0"
+				}
+			},
+			"octicons-verified-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2F1"
+				}
+			},
+			"octicons-verified-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2F2"
+				}
+			},
+			"octicons-versions-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2F3"
+				}
+			},
+			"octicons-versions-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2F4"
+				}
+			},
+			"octicons-video-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2F5"
+				}
+			},
+			"octicons-video-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2F6"
+				}
+			},
+			"octicons-webhook-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2F7"
+				}
+			},
+			"octicons-workflow-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2F8"
+				}
+			},
+			"octicons-workflow-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2F9"
+				}
+			},
+			"octicons-x-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2FA"
+				}
+			},
+			"octicons-x-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2FB"
+				}
+			},
+			"octicons-x-circle-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2FC"
+				}
+			},
+			"octicons-x-circle-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2FD"
+				}
+			},
+			"octicons-x-circle-fill-12": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2FE"
+				}
+			},
+			"octicons-x-circle-fill-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F2FF"
+				}
+			},
+			"octicons-x-circle-fill-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F300"
+				}
+			},
+			"octicons-zap-16": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F301"
+				}
+			},
+			"octicons-zap-24": {
+				"description": "_",
+				"default": {
+					"fontPath": "./iconfont/fonts/octicons.woff2",
+					"fontCharacter": "\\F302"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"run": "ts-node ./sources/run.ts"
+	},
+	"devDependencies": {
+		"@types/node": "^18.6.4",
+		"@types/vscode": "^1.70.0",
+		"oslllo-svg-fixer": "^2.1.2",
+		"fantasticon": "^1.2.3",
+		"node-worker-threads-pool": "^1.5.1"
+	}
+}
