@@ -238,7 +238,7 @@
 		}
 	},
 	"dependencies": {
-		"dateformat": "^4.6.3",
+		"dateformat": "4.6.3",
 		"systeminformation": "^5.12.2"
 	}
 }
