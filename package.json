@@ -3645,5 +3645,11 @@
 		"oslllo-svg-fixer": "^2.1.2",
 		"fantasticon": "^1.2.3",
 		"node-worker-threads-pool": "^1.5.1"
+	},
+	"__metadata": {
+		"id": "1b149c2d-9a87-4f57-aa16-31c1bf24634c",
+		"publisherDisplayName": "Liangru Liu",
+		"publisherId": "38d3078a-e2e3-4217-8e44-6a8b6cf6faaf",
+		"isPreReleaseVersion": false
 	}
 }
