@@ -1,29 +1,28 @@
 {
 	"name": "octicons-refsrc",
 	"displayName": "Octicons Refsrc",
-	"description": "Add custom buttons to the toolbar",
+	"description": "Provide icon reference source for other plugins",
 	"categories": [
 		"Other",
 		"Visualization"
 	],
 	"keywords": [
-		"shortcut",
-		"button",
-		"tool",
+		"Octicons",
+		"icon",
+		"development",
+		"API",
 		"toolbar",
-		"menu",
-		"menubar",
-		"bar",
-		"editor",
-		"terminal",
-		"status"
+		"statusbar"
 	],
 	"publisher": "liangruliu",
 	"icon": "images/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/LiangruLiu/VSCode-Extension/tree/octicons-refsrc"
+	},
 	"version": "0.1.0",
-	"preview": true,
 	"engines": {
-		"vscode": "^1.60.0"
+		"vscode": "^1.70.0"
 	},
 	"capabilities": {
 		"untrustedWorkspaces": {
@@ -3633,10 +3632,12 @@
 		}
 	},
 	"scripts": {
-		"vscode:prepublish": "npm run compile",
+		"vscode:prepublish": "",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
-		"run": "ts-node ./sources/run.ts"
+		"run": "ts-node ./sources/run.ts",
+		"pack": "vsce package",
+		"publish": "vsce publish"
 	},
 	"devDependencies": {
 		"@types/node": "^18.6.4",
