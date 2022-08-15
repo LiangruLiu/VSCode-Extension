@@ -1,10 +1,10 @@
-<!--20220709-->
+<!--20220816-->
 <span id="jump-begin"/> <h1 align="center"> Clock And Battery </h1>
 
 <div align=center>
-<img alt="VS Market Version" src="https://img.shields.io/visual-studio-marketplace/v/liangruliu.customize-toolbar?color=0c649e&style=flat-square">
-<img alt="VS Market Last Updated" src="https://img.shields.io/visual-studio-marketplace/last-updated/liangruliu.customize-toolbar?color=0c649e&style=flat-square">
-<img alt="VS Market Installs" src="https://img.shields.io/visual-studio-marketplace/i/liangruliu.customize-toolbar?color=0c649e&style=flat-square">
+<img alt="VS Market Version" src="https://img.shields.io/visual-studio-marketplace/v/liangruliu.clock-and-battery?color=0c649e&style=flat-square">
+<img alt="VS Market Last Updated" src="https://img.shields.io/visual-studio-marketplace/last-updated/liangruliu.clock-and-battery?color=0c649e&style=flat-square">
+<img alt="VS Market Installs" src="https://img.shields.io/visual-studio-marketplace/i/liangruliu.clock-and-battery?color=0c649e&style=flat-square">
 <img alt="(Static) Extension's Keywords" src="https://img.shields.io/badge/keywords-shortcut%2C%20button%2C%20tool%2C%20menu%2C%20bar-0c649e?style=flat-square">
 </div><br/>
 
@@ -14,10 +14,8 @@
    <summary align="center"> 展开 中文版介绍 </summary>
 
    <p align="center">
-   插件会在状态栏添加时间日期指示器
-      这个插件可以给界面右上角工具栏添加自定义按钮。<br/>
-      插件本身不提供实质性功能，而是提供了为任意命令设立按钮的途径。<br/>
-      首先声明，它目前还不够完善，详见 <a href="#jump-ch">文末</a>。
+      这个插件可以在状态栏添加日期时间指示器和电池电量指示器。<br/>
+      它和现有的同类插件相比，界面更精致，功能更丰富。<br/>
    </p>
    <div align="left">
 
@@ -27,25 +25,32 @@
 + [略](#jump-pic)
 
 
-## 前言及简介
+## 前言
 
-+ 对于那些常用的功能，为了更便于使用，你可以给它们绑定快捷键，但其实还有一个方法：在工具栏添加按钮。
-+ 一直以来，我使用的是一个叫做 [Shortcut Menu Bar](https://marketplace.visualstudio.com/items?itemName=jerrygoyal.shortcut-menu-bar) 的插件来实现添加按钮。然而它不支持自定义图标，这对于对美观度要求较高的我来说是个问题。
-+ 现在我自己做了一个插件，不仅能自定义图标，还支持根据文件名决定是否显示按钮。
++ 插件市场中已有好几个同类插件，我发现它们各有长处，所以我写了这个插件，将长处集于一体。
++ 插件的功能分为两部分：日期时间指示器和电池电量指示器。将来可能会增加性能相关的指示器，比如处理器、内存、网络等。
+
+
+## 功能
+
+1. 日期时间指示器
+   + 文字前面有随昼夜切换的小图标；点击状态栏项可以向当前编辑器插入日期时间。
+   + 以下内容均可自定义：是否启用、项在状态栏的位置、小图标及其切换时机、显示的日期时间的格式、插入的日期时间的格式、项的刷新周期。
+2. 电池电量指示器
+   + 文字前面有随电池状态切换的小图标。
+   + 以下内容均可自定义：是否启用、项在状态栏的位置、小图标及其切换时机、项的刷新周期。
 
 
 ## 安装与使用
 
 1. 点击 VSCode 左侧扩展按钮，在搜索框搜索，点击 `[安装]`。
-2. 在安装后的初次启动，请打开 `[扩展设置]`，按照 `Button Config` 项的介绍刷新一次。
-3. 在 `Button Config` 项中点击 `[在 settings.json 中编辑]`，然后可以根据代码提示来设置自己的按钮。代码提示里写得足够详细，这里就不再赘述了。
-4. 这个插件本身是不提供实质性功能的。默认配置里，有几个按钮调用的不是 VSCode 自带的命令，而是其他插件提供的命令，如果你没有安装的话是无法使用的。
+2. 可以去 `[扩展设置]` 看看，有许多内容可以自定义。
 
 
 ## 说明
 
 1. 插件代码所在位置为（`Windows` 上的默认路径）：<br/>
-   `C:/Users/<NAME>/.vscode/extensions/liangruliu.customize-toolbar-<VER>`
+   `C:/Users/<NAME>/.vscode/extensions/liangruliu.clock-and-battery-<VER>`
 2. <span id="jump-ch"/>
    我制作这个插件，一方面是需要这个功能，另一方面其实也是一个学习的过程，因为我既不太会 Node.js，也不太会 VSCode 插件开发。<br/>
    目前该插件的功能的代码实现逻辑很不好：我只会静态设置按钮，没找到动态设置按钮的方法，所以每次修改设置，其实是在通过文件读写修改源码的方式来修改功能。这也正是每次应用更改都需要重启两次的原因。<br/>

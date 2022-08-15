@@ -18,11 +18,12 @@ class Clock {
 		const { "Alignment": alignment, "Priority": priority } = this.getCfg("position")
 		this.item = vscode.window.createStatusBarItem
 			(vscode.StatusBarAlignment[alignment], priority)
-		const { "Icon Sequence": iconSeq,
+		const { "Icon Sequence": iconSeq_emptible,
 			"Display Format": displayFmt, "Insert Format": insertFmt } = this.getCfg("format")
+		const iconSeq = iconSeq_emptible ? iconSeq_emptible : "0:00,,0:00,"
 		// const [dayTime, dayIcon, nightTime, nightIcon] = iconSeq.split(",")
 		const [, dayH_str, dayM_str, dayIcon, nightH_str, nightM_str, nightIcon] =
-			/^(\d+):(\d+),(\S+),(\d+):(\d+),(\S+)$/.exec(iconSeq)
+			/^(\d+):(\d+),(\S*),(\d+):(\d+),(\S*)$/.exec(iconSeq)
 		const [dayH, dayM, nightH, nightM] =
 			[dayH_str, dayM_str, nightH_str, nightM_str].map(str => parseInt(str))
 		// function dynamicPart() {
@@ -35,7 +36,8 @@ class Clock {
 			// utils.debugLog (inDay)
 			const icon = inDay ? dayIcon : nightIcon
 			const displayTxt = dateFmt(displayFmt), insertTxt = dateFmt(insertFmt)
-			this.item.text = `$(${icon}) ${displayTxt}`
+			// this.item.text = `$(${icon}) ${displayTxt}`
+			this.item.text = (icon ? "$("+icon+") " : "") + displayTxt
 			this.item.tooltip = `Insert:  ${insertTxt}`
 			this.insertTxt = insertTxt
 		}

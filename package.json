@@ -7,16 +7,14 @@
 		"Visualization"
 	],
 	"keywords": [
-		"shortcut",
-		"button",
-		"tool",
-		"toolbar",
-		"menu",
-		"menubar",
-		"bar",
-		"editor",
-		"terminal",
-		"status"
+		"clock",
+		"battery",
+		"statusbar",
+		"indicator",
+		"monitor",
+		"resource",
+		"date",
+		"time"
 	],
 	"publisher": "liangruliu",
 	"icon": "images/icon.png",
@@ -135,7 +133,7 @@
 						},
 						"Text Sequence": {
 							"type": "string",
-							"pattern": "(?:\\S*,\\S*,\\S*,\\S*$)|(?:^$)"
+							"pattern": "(?:^\\S*,\\S*,\\S*,\\S*$)|(?:^$)"
 						},
 						"Low Battery Threshold": {
 							"type": "integer"
