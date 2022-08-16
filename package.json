@@ -22,7 +22,7 @@
 		"type": "git",
 		"url": "https://github.com/LiangruLiu/VSCode-Extension/tree/clock-and-battery"
 	},
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
