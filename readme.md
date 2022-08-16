@@ -5,7 +5,7 @@
 <img alt="VS Market Version" src="https://img.shields.io/visual-studio-marketplace/v/liangruliu.clock-and-battery?color=0c649e&style=flat-square">
 <img alt="VS Market Last Updated" src="https://img.shields.io/visual-studio-marketplace/last-updated/liangruliu.clock-and-battery?color=0c649e&style=flat-square">
 <img alt="VS Market Installs" src="https://img.shields.io/visual-studio-marketplace/i/liangruliu.clock-and-battery?color=0c649e&style=flat-square">
-<img alt="(Static) Extension's Keywords" src="https://img.shields.io/badge/keywords-shortcut%2C%20button%2C%20tool%2C%20menu%2C%20bar-0c649e?style=flat-square">
+<img alt="(Static) Extension's Keywords" src="https://img.shields.io/badge/keywords-clock%2C%20battery%2C%20statusbar%2C%20indicator-0c649e?style=flat-square">
 </div><br/>
 
 
@@ -51,12 +51,7 @@
 
 1. 插件代码所在位置为（`Windows` 上的默认路径）：<br/>
    `C:/Users/<NAME>/.vscode/extensions/liangruliu.clock-and-battery-<VER>`
-2. <span id="jump-ch"/>
-   我制作这个插件，一方面是需要这个功能，另一方面其实也是一个学习的过程，因为我既不太会 Node.js，也不太会 VSCode 插件开发。<br/>
-   目前该插件的功能的代码实现逻辑很不好：我只会静态设置按钮，没找到动态设置按钮的方法，所以每次修改设置，其实是在通过文件读写修改源码的方式来修改功能。这也正是每次应用更改都需要重启两次的原因。<br/>
-   我甚至认为这个程序有出错的可能，因此添加了手动刷新的功能。<br/>
-
-   如果你有解决这个问题的思路，或者有什么建议，欢迎通过邮箱 <LiangruLiu@outlook.com> 与我联系。
+2. 开发这个插件对我来说有点难度，因此这个插件可能存在漏洞。如果你真的遇到了，烦请通过邮箱 <LiangruLiu@outlook.com> 向我反馈。
 
 
 **开启个性化的 VSCode！**
@@ -69,9 +64,8 @@
 </details>
 
 <p align="center">
-   This plugin can add custom buttons to the toolbar in the upper right corner of the interface. <br/>
-   The plugin itself does not provide substantial functionality, but provides a way to set up buttons for arbitrary commands. <br/>
-   First of all, it's not perfect at present, see <a href="#jump-en">end of article</a> for details.
+   This plugin can add date time indicator and battery level indicator to the status bar. <br/>
+   Compared with the existing similar plugins, it has a more refined interface and richer functions. <br/>
 </p>
 
 
@@ -80,31 +74,33 @@
 <span id="jump-pic"/> [![Screenshot](https://liangruliu.github.io/images/vscodeExt/CT_screenshot.png)](https://liangruliu.github.io/images/vscodeExt/CT_screenshot.png)
 
 
-## Preface & Introduction
+## Preface
 
-+ For those frequently used functions, for easier use, you can bind shortcut keys to them, but there is actually another way: add buttons to the toolbar.
-+ In the past, I used a plugin called [Shortcut Menu Bar](https://marketplace.visualstudio.com/items?itemName=jerrygoyal.shortcut-menu-bar) to add buttons. However, it doesn't support customizing icons, which is a problem for me, who has high requirements for aesthetics.
-+ Now I've made my own plugin, which can not only customizes the icon, but also supports showing the button based on the filename.
++ There are several similar plugins in the plugin market, and I found that each has its own strengths, so I wrote this plugin to combine the strengths.
++ The functionality of the plugin is divided into two parts: date time indicator and battery level indicator. Performance related indicators such as processor, memory, network, etc. may be added in the future.
+
+
+## Function
+
+1. Date time indicator
+   + The text is preceded by a small icon that toggles with day and night; click the status bar item to insert date and time into the current editor.
+   + The following contents can be customized: whether to enable or not, the position of the item in the status bar, the small icon and its switching timing, the format of the displayed date and time, the format of the inserted date and time, and the refresh interval of the item.
+2. Battery level indicator
+   + The text is preceded by a small icon that toggles with the battery status.
+   + The following contents can be customized: whether to enable or not, the position of the item in the status bar, the small icon and its switching timing, and the refresh interval of the item.
 
 
 ## Installation & Usage
 
 1. Click the extension button on the left side of VSCode, search in the search box, and click `[install]`.
-2. In the first startup after installation, please open `[Extension Settings]` and refresh it once as described in the `Button Config` item.
-3. In the `Button Config` item, click `[Edit in settings.json]`, and then you can set your own button according to the code hints. The code hints are detailed enough, so I won't repeat them here.
-4. This plugin itself doesn't provide substantial functionality. In the default configuration, there are several buttons that call commands not from VSCode but from other plugins, which are not available if you don't have them installed.
+2. You can go to `[Extension Settings]` to have a look, since there are many contents that can be customized.
 
 
 ## Description
 
 1. The location of the plugin code is (Default path on `Windows`): <br/>
    `C:/Users/<NAME>/.vscode/extensions/liangruliu.customize-toolbar-<VER>`
-2. <span id="jump-en"/>
-   I created this plugin. On the one hand, I need this feature; on the other hand, it's actually a learning process, because I'm neither good at Node.js nor VSCode plugin development. <br/>
-   At present, the code implementation logic of this plugin's feature is very bad: I only know how to set buttons statically and haven't found a way to set them dynamically, so behind each modification of the settings, it's actually modifying the source code through file reading and writing to implement changes to the functionality. That's why you need to restart twice every time you apply a change. <br/>
-   I even thought there's a possibility of program errors in this program, so I added the ability to manually refresh it. <br/>
-
-   If you have ideas to solve this problem or have any suggestions, feel free to contact me via email <LiangruLiu@outlook.com>.
+2. It's a bit difficult for me to develop this plugin, so this plugin may have bugs. If you do encounter it, please send me feedback via email <LiangruLiu@outlook.com>.
 
 
 **Enjoy!**

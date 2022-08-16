@@ -1,7 +1,7 @@
 {
 	"name": "clock-and-battery",
 	"displayName": "Clock And Battery",
-	"description": "Add custom buttons to the toolbar",
+	"description": "Add clock and battery to the statusbar",
 	"categories": [
 		"Other",
 		"Visualization"
@@ -18,6 +18,10 @@
 	],
 	"publisher": "liangruliu",
 	"icon": "images/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/LiangruLiu/VSCode-Extension/tree/clock-and-battery"
+	},
 	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.60.0"
