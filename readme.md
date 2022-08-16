@@ -71,7 +71,7 @@
 
 ## Screenshot
 
-<span id="jump-pic"/> [![Screenshot](https://liangruliu.github.io/images/vscodeExt/CT_screenshot.png)](https://liangruliu.github.io/images/vscodeExt/CT_screenshot.png)
+<span id="jump-pic"/> [![Screenshot](https://raw.githubusercontent.com/LiangruLiu/VSCode-Extension/clock-and-battery/images/screenshot.png)](https://raw.githubusercontent.com/LiangruLiu/VSCode-Extension/clock-and-battery/images/screenshot.png)
 
 
 ## Preface
@@ -99,7 +99,7 @@
 ## Description
 
 1. The location of the plugin code is (Default path on `Windows`): <br/>
-   `C:/Users/<NAME>/.vscode/extensions/liangruliu.customize-toolbar-<VER>`
+   `C:/Users/<NAME>/.vscode/extensions/liangruliu.clock-and-battery-<VER>`
 2. It's a bit difficult for me to develop this plugin, so this plugin may have bugs. If you do encounter it, please send me feedback via email <LiangruLiu@outlook.com>.
 
 

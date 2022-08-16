@@ -1,3 +1,2 @@
 vsce package
 vsce publish
-改用 Day.js
