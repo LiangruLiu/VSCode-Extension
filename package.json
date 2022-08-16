@@ -22,7 +22,7 @@
 		"type": "git",
 		"url": "https://github.com/LiangruLiu/VSCode-Extension/tree/clock-and-battery"
 	},
-	"version": "0.1.1",
+	"version": "0.1.3",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
@@ -192,49 +192,49 @@
 				"description": "_",
 				"default": {
 					"fontPath": "./iconfont/cabicon.woff",
-					"fontCharacter": "\uF001"
+					"fontCharacter": "\\F001"
 				}
 			},
 			"cab-sun": {
 				"description": "_",
 				"default": {
 					"fontPath": "./iconfont/cabicon.woff",
-					"fontCharacter": "\uF002"
+					"fontCharacter": "\\F002"
 				}
 			},
 			"cab-moon": {
 				"description": "_",
 				"default": {
 					"fontPath": "./iconfont/cabicon.woff",
-					"fontCharacter": "\uF003"
+					"fontCharacter": "\\F003"
 				}
 			},
 			"cab-nobat": {
 				"description": "_",
 				"default": {
 					"fontPath": "./iconfont/cabicon.woff",
-					"fontCharacter": "\uF004"
+					"fontCharacter": "\\F004"
 				}
 			},
 			"cab-lowbat": {
 				"description": "_",
 				"default": {
 					"fontPath": "./iconfont/cabicon.woff",
-					"fontCharacter": "\uF005"
+					"fontCharacter": "\\F005"
 				}
 			},
 			"cab-battery": {
 				"description": "_",
 				"default": {
 					"fontPath": "./iconfont/cabicon.woff",
-					"fontCharacter": "\uF006"
+					"fontCharacter": "\\F006"
 				}
 			},
 			"cab-charging": {
 				"description": "_",
 				"default": {
 					"fontPath": "./iconfont/cabicon.woff",
-					"fontCharacter": "\uF007"
+					"fontCharacter": "\\F007"
 				}
 			}
 		}
@@ -242,5 +242,11 @@
 	"dependencies": {
 		"dateformat": "4.6.3",
 		"systeminformation": "^5.12.2"
+	},
+	"__metadata": {
+		"id": "24b7342e-37e4-41a7-bc2c-a81b257835e9",
+		"publisherDisplayName": "Liangru Liu",
+		"publisherId": "38d3078a-e2e3-4217-8e44-6a8b6cf6faaf",
+		"isPreReleaseVersion": false
 	}
 }
