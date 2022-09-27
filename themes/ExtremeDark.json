@@ -1,4 +1,4 @@
-// 20220708
+// 20220927
 {
 "$schema": "vscode://schemas/color-theme",
 "name": "extreme-dark-theme",
@@ -45,6 +45,7 @@
 	"button.secondaryBackground": "#00000000", //1.2_1 弹窗
 	"button.secondaryForeground": "#b0b0b0", //4.2_1
 	"button.secondaryHoverBackground": "#ffffff2a", //3.2_0
+	"button.separator": "#b0b0b0", //4.2_1
 	// "charts.foreground": "#ff00ffaa", //UNKWN
 	"checkbox.background": "#00000000", //1.2_1
 	"checkbox.border": "#b0b0b0", //4.2_1
@@ -131,7 +132,7 @@
 	"editor.foldBackground": "#ffffff28", //3.2_0 折叠
 	"editor.foreground": "#eeeeee", //4.1_0 "#95d390"
 	"editor.hoverHighlightBackground": "#80808080", //sel 悬停提示
-	"editor.inactiveSelectionBackground": "#ffffff33", //sel
+	"editor.inactiveSelectionBackground": "#ffffff30", //sel
 	"editor.inlineValuesBackground": "#00345dc0", //3.1_2 Java调试时行内显示变量值
 	"editor.inlineValuesForeground": "#888888", //4.2_0
 	"editor.lineHighlightBackground": "#ffffff1c",//sel 当前行
@@ -208,7 +209,7 @@
 	"editorHint.border": "#af4dff", //UNKWN
 	"editorHint.foreground": "#11d4c4", //UNKWN
 // 悬停提示，包括编辑器中的代码和整个界面中的按钮 final
-	"editorHoverWidget.background": "#000000bb", //1.1_0
+	"editorHoverWidget.background": "#000000d0", //1.3_1
 	"editorHoverWidget.border": "#9d9d9d", //2.3_0
 	"editorHoverWidget.foreground": "#b0b0b0", //4.2_1
 	"editorHoverWidget.highlightForeground": "#4aaeff", //4.1_3 正在写的函数参数
@@ -258,6 +259,8 @@
 // 其他 final
 	"editorPane.background": "#000000", //1.1_1
 	"editorRuler.foreground": "#ffffff3a", //2.2_1 单行长度限制标线
+	"editorStickyScroll.background": "#000000a0", //1.3_1 //透明度有误，vscode的bug
+	"editorStickyScrollHover.background": "#3a3a3ac0", //3.2_1
 // 自动补全 final 考虑改成蓝底
 	"editorSuggestWidget.background": "#000000d0", //1.3_1
 	"editorSuggestWidget.border": "#9d9d9d", //2.3_0
@@ -281,13 +284,14 @@
 	"editorWidget.border": "#ff00ffaa", //UNKWN
 	"editorWidget.foreground": "#b0b0b0", //4.2_1
 	"editorWidget.resizeBorder": "#ffffff50",
-	"errorForeground": "#a200ff", //查找未找到，等等 //TODO
+	"errorForeground": "#ff566c", //E.1 查找未找到，设置项被弃用，等等
 	"extensionBadge.remoteBackground": "#86034b", //UNKWN
 	"extensionBadge.remoteForeground": "#f5ff6f", //UNKWN
 	"extensionButton.prominentBackground": "#ffffff2a", //3.2_0 按钮和三角标签
 	"extensionButton.prominentForeground": "#ffffff", //4.1_1
 	"extensionButton.prominentHoverBackground": "#00000000", //1.2_1
 	"extensionIcon.preReleaseForeground": "#ffffff2a", //3.2_0
+	"extensionIcon.sponsorForeground": "#b0b0b0", //4.2_1
 	"extensionIcon.starForeground": "#b0b0b0", //4.2_1
 	"extensionIcon.verifiedForeground": "#4aaeff", //4.1_3 已认证扩展开发者的徽标
 	"focusBorder": "#ffd000a2", //I_0 or 透明蓝色
@@ -353,7 +357,9 @@
 	"list.inactiveSelectionIconForeground": "#4aaeff", //4.1_3
 	"list.invalidItemForeground": "#00ffc8", //TODO 工作区中文件夹不存在
 	"list.warningForeground": "#e68e42", //W.1
-	"listFilterWidget.background": "#ffffff2a", //3.2_0
+	"list.focusAndSelectionOutline": "#ffd000a2", //I_0 or 透明蓝色
+	"listFilterWidget.shadow": "#00000000", //1.2_1
+	"listFilterWidget.background": "#3a3a3ac0", //3.2_1
 	"listFilterWidget.noMatchesOutline": "#ff566c", //E.1
 	"listFilterWidget.outline": "#4aaeff", //4.1_3
 // 右键菜单和上方菜单栏 final
@@ -375,6 +381,15 @@
 	"merge.currentHeaderBackground": "#20a06077", //O
 	"merge.incomingContentBackground": "#1080c040", //O
 	"merge.incomingHeaderBackground": "#1080c077", //O
+	"mergeEditor.change.background": "#d0802040", //TODO
+	"mergeEditor.change.word.background": "#d0802040", //TODO
+	"mergeEditor.conflict.handled.minimapOverViewRuler": "#5a5a5a", //TODO
+	"mergeEditor.conflict.handledFocused.border": "#1684d3", //TODO
+	"mergeEditor.conflict.handledUnfocused.border": "#5a5a5a", //TODO
+	"mergeEditor.conflict.unhandled.minimapOverViewRuler": "#b37503", //TODO
+	"mergeEditor.conflict.unhandledFocused.border": "#1684d3", //TODO
+	"mergeEditor.conflict.unhandledUnfocused.border": "#b37503", //TODO
+	"mergeEditor.conflictingLines.background": "#d0802077", //TODO
 // 总览 final
 	"minimap.background": "#00000080", //1.1_0
 	"minimap.errorHighlight": "#db0a26aa", //E.2_0
@@ -396,6 +411,7 @@
 	"notebook.cellInsertionIndicator": "#0a80d1", //2.1_1 拖放指示线
 	"notebook.cellStatusBarItemHoverBackground": "#ffffff2a", //3.2_0 每块右下角的语言按钮
 	"notebook.cellToolbarSeparator": "#0a80d1", //2.1_1
+	"notebook.editorBackground": "#000000", //1.1_1
 	"notebook.focusedCellBackground": "#000000", //1.1_1
 	"notebook.focusedCellBorder": "#0a80d1", //2.1_1
 	"notebook.focusedEditorBorder": "#0a80d1", //2.1_1
@@ -470,7 +486,7 @@
 // 其他 final
 	"sash.hoverBorder": "#0a80d1", //2.1_1 可移动边线上悬停
 	"scm.providerBorder": "#ff00ffaa", //UNKWN
-	"scrollbar.shadow": "#00000000", //1.2_1 or1.1_1
+	"scrollbar.shadow": "#606060", //1.2_1 or1.1_1
 	"scrollbarSlider.activeBackground": "#ffffff3a", //3.2_0
 	"scrollbarSlider.background": "#ffffff4a", //3.2_0
 	"scrollbarSlider.hoverBackground": "#289eff6a", //3.2_0
@@ -478,8 +494,6 @@
 	// "searchEditor.findMatchBorder" //del
 	"searchEditor.textInputBorder": "#777777", //2.3_0
 	"selection.background": "#ffffff3d", //sel 设置和查找框中选择的文字背景
-	"sideBySideEditor.horizontalBorder": "#0a80d1", //2.1_1 编辑器组内拆分
-	"sideBySideEditor.verticalBorder": "#0a80d1", //2.1_1
 // 设置 //TODO
 	"settings.checkboxBackground": "#a0a0a040", //3.2_0 or "#00000000", //1.2_1
 	"settings.checkboxBorder": "#00000000", //1.2_1 or "#b0b0b0", //4.2_1
@@ -510,6 +524,8 @@
 	"sideBarSectionHeader.border": "#00000000", //1.2_1//del
 	"sideBarSectionHeader.foreground": "#ffffff", //4.1_1
 	"sideBarTitle.foreground": "#ffffff", //4.1_1
+	"sideBySideEditor.horizontalBorder": "#0a80d1", //2.1_1 编辑器组内拆分
+	"sideBySideEditor.verticalBorder": "#0a80d1", //2.1_1
 // 状态栏 final
 	"statusBar.background": "#000000", //1.1_1
 	"statusBar.border": "#ffffff3a", //2.2_1
@@ -532,6 +548,8 @@
 	"statusBarItem.prominentHoverBackground": "#059618", //UNKWN
 	"statusBarItem.remoteBackground": "#00000000", //1.2_1
 	"statusBarItem.remoteForeground": "#b0b0b0", //4.2_1
+	"statusBarItem.settingsProfilesBackground": "#ff000060", //UNKWN
+	"statusBarItem.settingsProfilesForeground": "#ff0000", //UNKWN
 	"statusBarItem.warningBackground": "#8d4b00", //UNKWN
 	"statusBarItem.warningForeground": "#ffb259", //UNKWN
 // 左侧列表的大纲和自动补全候选栏中的图标 //TODO //G
@@ -619,7 +637,8 @@
 	"terminal.findMatchHighlightBackground": "#00000000", //1.2_1
 	"terminal.findMatchHighlightBorder": "#808080", //4.2_0
 	"terminal.foreground": "#dddddd", //4.1_0
-	"terminal.selectionBackground": "#ffffff30", //sel
+	"terminal.inactiveSelectionBackground": "#ffffff30", //sel
+	"terminal.selectionBackground": "#ffffff40", //sel
 	"terminal.selectionForeground": "#00000000", //1.2_1 不改变
 	"terminal.tab.activeBorder": "#0a80d1", //2.1_1
 	"terminalCommandDecoration.defaultBackground": "#d0b127", //G 需启用ShellIntegration

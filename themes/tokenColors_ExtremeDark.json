@@ -1,4 +1,4 @@
-// 20220803
+// 20220919
 {
 "$schema": "vscode://schemas/color-theme",
 "semanticHighlighting": true,
@@ -260,6 +260,8 @@
 		"scope": [
 			"string.quoted.single.python",
 			"string.quoted.multi.python",
+			"string.regexp.quoted.single.python",
+			"string.quoted.binary.single.python",
 		],
 		"settings": {"foreground": "#db86ec"}
 	},
@@ -896,6 +898,39 @@
 		"name": "unrecognizable",
 		"scope": "source.antlr",
 		"settings": {"foreground": "#dddddd"}
+	},
+	// #endregion
+	// #region Verilog
+	{
+		"name": "keyword",
+		"scope": "keyword.other.verilog",
+		"settings": {"foreground": "#59baff"}
+	},
+	{
+		"name": "macro",
+		"scope": "keyword.other.compiler.directive.verilog",
+		"settings": {"foreground": "#83a2ff"}
+	},
+	{
+		"name": "function",
+		"scope": "support.function.system.console.tasks.verilog",
+		"settings": {"foreground": "#d7cc75"}
+	},
+	{
+		"name": "module",
+		"scope": [
+			"entity.name.type.module.verilog",
+			"entity.name.tag.module.reference.verilog",
+		],
+		"settings": {"foreground": "#4bc89a"}
+	},
+	{
+		"name": "constant - num",
+		"scope": [
+			"constant.numeric.integer.verilog",
+			"constant.numeric.sized_integer.verilog",
+		],
+		"settings": {"foreground": "#ff8091"}
 	},
 	// #endregion
 ]
