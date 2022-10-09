@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>行号生成</title>
+</head>
+
+<body>
+	<!-- https://www.runoob.com/dom/dom-nodes-create.html -->
+	<p>从VSCode复制代码，粘贴至此生成行号。</p>
+	<p>行号颜色（RRGGBB）： <input id="name" type="text" /></p>
+	<script>
+		document.onpaste = function (event) {
+			const color = document.getElementById("name").value;
+			let html = event.clipboardData.getData("text/html") //"text/plain"
+			console.log (html)
+			html = html.replace (/(<div style="color: #)......;/, `$1${color};`)
+			html = html.replace (/<br>/g, "<div></div>")
+			for (let i=1; ;i++) {
+				const newHtml = html.replace ("<div><", `<div>${i}\t<`)
+				if (html == newHtml) break
+				html = newHtml
+			}
+			document.write (html)
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+{
+	"name": "line-number",
+	"displayName": "Line Number",
+	"description": "Copy formatted text with line numbers, or insert line numbers in place",
+	"categories": [
+		"Other",
+		"Visualization",
+		"Programming Languages"
+	],
+	"keywords": [
+		"line number",
+		"copy",
+		"tool",
+		"editor"
+	],
+	"publisher": "liangruliu",
+	"icon": "images/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/LiangruLiu/VSCode-Extension/tree/line-number"
+	},
+	"version": "0.1.0",
+	"engines": {
+		"vscode": "^1.60.0"
+	},
+	"capabilities": {
+		"untrustedWorkspaces": {
+			"supported": true
+		}
+	},
+	"main": "./sources/extension",
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Line Number",
+			"properties": {
+				"LineNumber.buttonConfig": {
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "line-number.lncopy",
+				"category": "Line Number",
+				"title": "LnCopy"
+			}
+		],
+		"keybindings": []
+	}
+}
