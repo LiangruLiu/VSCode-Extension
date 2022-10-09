@@ -37,8 +37,7 @@
 			"type": "object",
 			"title": "Line Number",
 			"properties": {
-				"LineNumber.buttonConfig": {
-				}
+				"LineNumber.buttonConfig": {}
 			}
 		},
 		"commands": [
@@ -49,5 +48,11 @@
 			}
 		],
 		"keybindings": []
+	},
+	"__metadata": {
+		"id": "3bbb5719-748d-4873-9400-43a1c7db0ae9",
+		"publisherDisplayName": "Liangru Liu",
+		"publisherId": "38d3078a-e2e3-4217-8e44-6a8b6cf6faaf",
+		"isPreReleaseVersion": false
 	}
 }
