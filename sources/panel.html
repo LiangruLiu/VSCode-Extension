@@ -1,28 +1,135 @@
+<!-- 20221012 -->
 <!DOCTYPE html>
 <html>
 
 <head>
 	<meta charset="utf-8">
-	<title>行号生成</title>
+	<title>Line number generation</title> <!-- 行号生成 -->
 </head>
 
-<body>
-	<!-- https://www.runoob.com/dom/dom-nodes-create.html -->
-	<p>从VSCode复制代码，粘贴至此生成行号。</p>
-	<p>行号颜色（RRGGBB）： <input id="name" type="text" /></p>
-	<script>
+<body id="body">
+	<h2>Copy the code from VSCode, then paste here to generate line numbers and copy automatically.</h2>
+	<!-- 从VSCode复制代码，粘贴至此生成行号并自动复制。 -->
+	<style>
+		input {
+			background: none;
+			border: 2px solid #8888;
+			border-radius: 4px;
+			color: unset;
+			text-align: center;
+		}
+	</style>
+	<table cellspacing=10 style="text-align:center">
+		<tr>
+			<td>Page color</td> <!-- 页面颜色 -->
+			<td>( #RRGGBB | original )</td>
+			<td><input id="pageColor" type="text" value="original"/></td>
+		</tr> <tr>
+			<td>Background color</td> <!-- 背景颜色 -->
+			<td>( #RRGGBB | original | empty )</td>
+			<td><input id="backColor" type="text" value="empty"/></td>
+		</tr> <tr>
+			<td>Line number color</td> <!-- 行号颜色 -->
+			<td>( #RRGGBB | original | empty )</td>
+			<td><input id="numColor" type="text" value="#808080"/></td>
+		</tr> <tr>
+			<td>Line number start</td> <!-- 行号起始 -->
+			<td>( 0~? | 00~0? )</td>
+			<td><input id="numStart" type="text" value="01"/></td>
+		</tr> <tr>
+			<td>Code color</td> <!-- 代码颜色 -->
+			<td>( L-100%~+100%,S~ | #RRGGBB )</td>
+			<td><input id="codeColor" type="text" value="L-50%,S+0%"/></td>
+		</tr> <tr>
+			<td>Reduce indent<br/>(unsupported now)</td> <!-- 减少缩进（暂不支持） -->
+			<td>( true | false )</td>
+			<td><input id="indentBack" type="text" value="true"/></td>
+		</tr>
+	</table>
+	<br/><hr/><br/><p id="panel"></p>
+
+
+	<!-- <script type="text/javascript"> -->
+	<script type="module">
+		// console.log(navigator.language)
+		// 此代码通过文本替换来解决问题，但更合理的方式是解析为树
+		// https://www.runoob.com/dom/dom-nodes-create.html
+		import Color from "https://colorjs.io/dist/color.js"
 		document.onpaste = function (event) {
-			const color = document.getElementById("name").value;
-			let html = event.clipboardData.getData("text/html") //"text/plain"
-			console.log (html)
-			html = html.replace (/(<div style="color: #)......;/, `$1${color};`)
-			html = html.replace (/<br>/g, "<div></div>")
-			for (let i=1; ;i++) {
-				const newHtml = html.replace ("<div><", `<div>${i}\t<`)
-				if (html == newHtml) break
-				html = newHtml
+
+			// 获取剪贴板内容 ------
+			async function pasteHtml () {  // 可能需要权限
+				const data = await navigator.clipboard.read()
+				const blob = await data[0].getType("text/html")
+				const htmlStr = await blob.text()
+				return htmlStr
 			}
-			document.write (html)
+			// console.log (pasteHtml())
+			let html = event.clipboardData.getData("text/html")  // "text/plain"
+			// console.log (html)
+			// 获取参数 ------
+			function idGet (id) {return document.getElementById(id)}
+			const pageColor = idGet( "pageColor" ).value
+			const backColor = idGet( "backColor" ).value
+			const numColor  = idGet( "numColor"  ).value
+			const numStart  = idGet( "numStart"  ).value
+			const codeColor = idGet( "codeColor" ).value
+
+			// 页面颜色 ------
+			idGet("body").style.backgroundColor = pageColor[0]=="#" ? pageColor : "transparent"
+			// 背景颜色 ------
+			const find1 = /(<div style="color: #......;background-color: )(#......)(;)/
+			const rep1 = backColor[0]=="#" ? backColor : backColor=="empty" ? "transparent" : "$2"
+			html = html.replace (find1, "$1"+ rep1 +"$3")
+			// 行号颜色 ------
+			if (numColor[0]=="#")
+				html = html.replace (/(<div style="color: )#......;/, `$1${numColor};`)
+			// console.log (html)
+			if (numColor!="empty") {
+				// 行号起始 ------
+				html = html.replace (/<br>/g, "<div></div>")
+				const zero = numStart[0]=="0" && numStart!="0"
+				const start = Number (numStart)
+				const total = html.match(/<div></g).length
+				const digit = (start+total-1).toString().length
+				for (let i=start; i<start+total; i++) {
+					const rep2 = zero ? i.toString().padStart(digit,"0") : i
+					const newHtml = html.replace ("<div><", `<div>${rep2}\t<`)
+					if (html == newHtml) break
+					html = newHtml
+				}
+			}
+			// 代码颜色 ------
+			// console.log( new Color("#FF800040").mix(new Color("black"),0.5).to("srgb").toString({format:"hex"}) )
+			if (codeColor[0]=="#") {
+				html = html.replace (/(#......)(;">)/g, codeColor+"$2")
+			} else {
+				function mix (src, tgt, pct)
+					{return new Color(src).mix(new Color(tgt),pct).to("srgb").toString({format:"hex"})}
+				function offset (src, hPct, sPct, lPct) {
+					let rslt = new Color(src).to("hsl")
+					const tgt = {"h": [0,359], "s": [0,100], "l": [0,100]}
+					function pct2num (pct) {return pct.replace("%","")/100}
+					const pct = {"h": pct2num(hPct), "s": pct2num(sPct), "l": pct2num(lPct)}
+					for (const i of "hsl")
+						rslt[i] += (tgt[i][pct[i]<0? 0:1] - rslt[i]) * Math.abs(pct[i])
+					return rslt.to("srgb").toString({format:"hex"})
+				}
+				// console.log(offset("#ff800040","0%","-25%","50%"))
+				const lPct = codeColor.split(",")[0].slice(1), sPct = codeColor.split(",")[1].slice(1)
+				const rep3 = (match, p1, p2) => offset (p1,"0%",sPct,lPct) + p2
+				html = html.replace (/(#......)(;">)/g, rep3)
+			}
+
+			// 设置剪贴板内容 ------
+			function copyHtml (htmlStr) {
+				const type = "text/html"
+				const blob = new Blob([htmlStr], { type })
+				const data = [new ClipboardItem({ [type]: blob })]
+				navigator.clipboard.write(data)
+			}
+			copyHtml(html)
+			idGet("panel").innerHTML = html
 		}
 	</script>
 </body>

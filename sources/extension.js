@@ -1,4 +1,4 @@
-// 20221010
+// 20221011
 "use strict"
 const vscode = require ("vscode")  // 请忽略提示，千万不要点击自动修复
 const fs = require ("fs")
@@ -11,22 +11,25 @@ exports.activate = function (context) {
 	// 	if (event.affectsConfiguration ("CustomizeToolbar.buttonConfig")) refresh()
 	// }))
 
-	const copy = () => {
+	const openPanel = () => {
 		const panel = vscode.window.createWebviewPanel
-			("", "Panel", vscode.ViewColumn.Beside, {enableScripts:true})
+			("", "Panel", vscode.ViewColumn.Beside,
+			{enableScripts:true, retainContextWhenHidden:true})
 		panel.webview.html = fs.readFileSync (__dirname+"/panel.html") .toString()
-		// let a = vscode.commands.executeCommand
+		// https://blog.csdn.net/zhouhangzooo/article/details/89040623
+		// https://www.npmjs.com/package/jsdom
+
+		// vscode.commands.executeCommand
 		// 	("editor.action.clipboardCopyWithSyntaxHighlightingAction")
 		// 	.then((str) => console.log(str) )
 		// vscode.env.clipboard.readText()
 		// 	.then((str) => console.log(str) )
 	}
 	context.subscriptions.push( vscode.commands.registerCommand(
-		"line-number.lncopy", () => copy()
+		"line-number.open-panel", () => openPanel()
 	))
 }
 
 
 exports.deactivate = function () {
 }
-// 希望实现复制带格式文本并自动加行号
