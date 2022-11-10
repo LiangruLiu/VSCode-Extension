@@ -1,4 +1,4 @@
-<!--20220709-->
+<!--20221110-->
 <span id="jump-begin"/> <h1 align="center"> Customize Toolbar </h1>
 
 <div align=center>
@@ -30,7 +30,7 @@
 
 + 对于那些常用的功能，为了更便于使用，你可以给它们绑定快捷键，但其实还有一个方法：在工具栏添加按钮。
 + 一直以来，我使用的是一个叫做 [Shortcut Menu Bar](https://marketplace.visualstudio.com/items?itemName=jerrygoyal.shortcut-menu-bar) 的插件来实现添加按钮。然而它不支持自定义图标，这对于对美观度要求较高的我来说是个问题。
-+ 现在我自己做了一个插件，不仅能自定义图标，还支持根据文件名决定是否显示按钮。
++ 现在我自己做了一个插件，不仅能自定义图标，还支持根据文件名决定是否显示按钮，因此可作为对 Code Runner 插件的补充。
 
 
 ## 安装与使用
@@ -78,7 +78,7 @@
 
 + For those frequently used functions, for easier use, you can bind shortcut keys to them, but there is actually another way: add buttons to the toolbar.
 + In the past, I used a plugin called [Shortcut Menu Bar](https://marketplace.visualstudio.com/items?itemName=jerrygoyal.shortcut-menu-bar) to add buttons. However, it doesn't support customizing icons, which is a problem for me, who has high requirements for aesthetics.
-+ Now I've made my own plugin, which can not only customizes the icon, but also supports showing the button based on the filename.
++ Now I've made my own plugin, which can not only customizes the icon, but also supports showing the button based on the filename, so it can be used as a supplement to the Code Runner plugin.
 
 
 ## Installation & Usage

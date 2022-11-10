@@ -25,7 +25,7 @@
 		"type": "git",
 		"url": "https://github.com/LiangruLiu/VSCode-Extension/tree/customize-toolbar"
 	},
-	"version": "0.1.4",
+	"version": "0.2.0",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
@@ -51,41 +51,68 @@
 						"type": "object",
 						"properties": {
 							"name": {
-								"markdownDescription": "The name of the button to display on hover.",
+								"markdownDescription": "**(Required)** The name of the button to display on hover.",
 								"type": "string"
 							},
 							"icon": {
-								"markdownDescription": "**A.** A theme icon reference, like \n\n `\"zap\"` \n\n (see [official doc](https://code.visualstudio.com/api/references/icons-in-labels#icon-listing) and extension [Octicons Refsrc](https://marketplace.visualstudio.com/items?itemName=liangruliu.octicons-refsrc) \n\n **B.** An object with absolute paths for light and dark themes, like \n\n `{ \"light\": \".../a.svg\", \"dark\": \".../b.svg\" }` \n\n (use `builtin` to represent the root directory of this plugin's built-in icons.)",
+								"markdownDescription": "**(Required)** The icon of the button. \n\n **A.** A theme icon reference, like \n\n `\"zap\"` \n\n (see [official doc](https://code.visualstudio.com/api/references/icons-in-labels#icon-listing) and extension [Octicons Refsrc](https://marketplace.visualstudio.com/items?itemName=liangruliu.octicons-refsrc) \n\n **B.** An object with absolute paths for light and dark themes, like \n\n `{ \"light\": \".../a.svg\", \"dark\": \".../b.svg\" }` \n\n (use `builtin` to represent the root directory of this plugin's built-in icons.)",
 								"type": [
 									"string",
 									"object"
 								]
 							},
-							"command": {
-								"markdownDescription": "The command executed by pressing the button. \n\n Note that you need to fill in the **identifier** instead of the name. Specific information can be found in the [keyboard shortcut list](command:workbench.action.openGlobalKeybindings). \n\n For example, to expand or retract the terminal, write `workbench.action.terminal.toggleTerminal` instead of `view.toggleTerminal`.",
+							"command_vscode": {
+								"markdownDescription": "**(Exclusive)** The VSCode command executed by pressing the button. \n\n Note that you need to fill in the **identifier** instead of the name. Specific information can be found in the [keyboard shortcut list](command:workbench.action.openGlobalKeybindings). \n\n For example, to expand or retract the terminal, write `workbench.action.terminal.toggleTerminal` instead of `view.toggleTerminal`.",
+								"type": "string"
+							},
+							"command_terminal": {
+								"markdownDescription": "**(Exclusive)** The terminal command executed by pressing the button. \n\n Variables are substituted based on the context: \n\n + `$path` : full path of current file\n + `$dir` : path of the folder that current file is contained in\n + `$name` : current file's name\n + `$stem` : current file's name without extension\n + `$workspace` : path of the workspace (if exists)\n + `$relative` : path of current file relative to the workspace",
 								"type": "string"
 							},
 							"when": {
-								"markdownDescription": "(Optional) If a regular expression is given, the button will be displayed only if the filename matches it. \n\n For example: `\"^(?:.*.txt|txt.md)$\"` matches files with a \".txt\" file extension or a \"txt.md\" file name; `\"^.*(?<!.txt)$\"` matches files with a file extension other than \".txt\".",
+								"markdownDescription": "**(Optional)** If a regular expression is given, the button will be displayed only if the filename matches it. \n\n For example: `\"^(?:.*.txt|txt.md)$\"` matches files with a \".txt\" file extension or a \"txt.md\" file name; `\"^.*(?<!.txt)$\"` matches files with a file extension other than \".txt\".",
 								"type": "string"
 							}
 						},
 						"additionalProperties": false,
+						"oneOf": [
+							{
+								"required": [
+									"name",
+									"icon",
+									"command_vscode"
+								]
+							},
+							{
+								"required": [
+									"name",
+									"icon",
+									"command_terminal"
+								]
+							}
+						],
 						"default": {
 							"name": "",
 							"icon": "",
-							"command": "",
+							"command_vscode": "",
+							"command_terminal": "",
 							"when": ""
 						}
 					},
 					"default": [
+						{
+							"name": "Interactive Terminal",
+							"icon": "zap",
+							"command_terminal": "cd \"$dir\" && py",
+							"when": "^.*.py$"
+						},
 						{
 							"name": "Toggle Terminal",
 							"icon": {
 								"light": "builtin/terminal_light.svg",
 								"dark": "builtin/terminal_dark.svg"
 							},
-							"command": "workbench.action.terminal.toggleTerminal"
+							"command_vscode": "workbench.action.terminal.toggleTerminal"
 						},
 						{
 							"name": "Save All",
@@ -93,7 +120,7 @@
 								"light": "builtin/save_dark.svg",
 								"dark": "builtin/save_dark.svg"
 							},
-							"command": "workbench.action.files.saveAll"
+							"command_vscode": "workbench.action.files.saveAll"
 						},
 						{
 							"name": "Cursor Align",
@@ -101,7 +128,7 @@
 								"light": "builtin/cursorAlign_dark.svg",
 								"dark": "builtin/cursorAlign_dark.svg"
 							},
-							"command": "yo1dog.cursor-align.alignCursors"
+							"command_vscode": "yo1dog.cursor-align.alignCursors"
 						},
 						{
 							"name": "Toggle Bookmarks",
@@ -109,7 +136,7 @@
 								"light": "builtin/bookmark_dark.svg",
 								"dark": "builtin/bookmark_dark.svg"
 							},
-							"command": "bookmarks.toggle"
+							"command_vscode": "bookmarks.toggle"
 						}
 					]
 				}
