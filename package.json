@@ -19,7 +19,7 @@
 		"type": "git",
 		"url": "https://github.com/LiangruLiu/VSCode-Extension/tree/extreme-dark-theme"
 	},
-	"version": "0.6.8",
+	"version": "0.6.9",
 	"engines": {
 		"vscode": "^1.60.0"
 	},

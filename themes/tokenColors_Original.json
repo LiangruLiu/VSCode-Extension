@@ -555,10 +555,10 @@
 "semanticHighlighting": true,
 "semanticTokenColors": {
 	// ordinary
-	"newOperator": "#d4d4d4",
-	"stringLiteral": "#ce9178",
-	"customLiteral": "#D4D4D4",
-	"numberLiteral": "#b5cea8",
+	// "newOperator": "#d4d4d4",
+	// "stringLiteral": "#ce9178",
+	// "customLiteral": "#D4D4D4",
+	// "numberLiteral": "#b5cea8",
 	// plus
 	"newOperator": "#C586C0",
 	"stringLiteral": "#ce9178",

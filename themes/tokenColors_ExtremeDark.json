@@ -1,4 +1,4 @@
-// 20220919
+// 20221011
 {
 "$schema": "vscode://schemas/color-theme",
 "semanticHighlighting": true,
@@ -32,6 +32,7 @@
 	"function:cpp":           "#d7cc75",
 	"function:c":             "#d7cc75",
 	"function:javascript":    "#d7cc75",
+	"function:html":          "#d7cc75",
 	"interface":              "#ff0000",
 	"interface:java":         "#4bc89a",
 	"keyword":                "#ff0000",
@@ -45,6 +46,7 @@
 	"method:cpp":             "#d7cc75",
 	"method:java":            "#d7cc75",
 	"method:javascript":      "#d7cc75",
+	"method:html":            "#d7cc75",
 	"namespace":              "#ff0000",
 	"namespace:cpp":          "#4bc89a",
 	"namespace:java":         "#4bc89a",
@@ -57,11 +59,14 @@
 	"parameter:c":            "#83a2ff",
 	"parameter:java":         "#83a2ff",
 	"parameter:javascript":   "#83a2ff",
+	"parameter:html":         "#83a2ff",
 	"property":               "#ff0000",
 	"property:python":        "#83a2ff",
 	"property:cpp":           "#83a2ff",
 	"property:c":             "#83a2ff",
 	"property:java":          "#83a2ff",
+	"property:javascript":    "#83a2ff",
+	"property:html":          "#83a2ff",
 	"regexp":                 "#ff0000",
 	"string":                 "#ff0000",
 	"struct":                 "#ff0000",
@@ -73,6 +78,7 @@
 	"variable:python":        "#59baff",
 	"variable:java":          "#59baff",
 	"variable:javascript":    "#59baff",
+	"variable:html":          "#59baff",
 	// Python
 	"*.builtin:python":         "#d7cc75",
 	"*.decorator:python":       "#acd37d",
@@ -201,15 +207,6 @@
 		"settings": {"foreground": "#b0b0b0"}
 	},
 	{
-		"name": "html tag",
-		"scope": [
-			"punctuation.definition.tag.begin.html",
-			"entity.name.tag.html",
-			"punctuation.definition.tag.end.html",
-		],
-		"settings": {"foreground": "#acd37d"}
-	},
-	{
 		"name": "separator",
 		"scope": "meta.separator.markdown",
 		"settings": {"foreground": "#59baff"}
@@ -218,6 +215,35 @@
 		"name": "list",
 		"scope": "punctuation.definition.list.begin.markdown",
 		"settings": {"foreground": "#59baff"}
+	},
+	// #endregion
+	// #region Html
+	{
+		"name": "tag name",
+		"scope": "entity.name.tag.html",
+		"settings": {"foreground": "#acd37d"}
+	},
+	{
+		"name": "tag bracket",
+		"scope": [
+			"punctuation.definition.tag.begin.html",
+			"punctuation.definition.tag.end.html",
+		],
+		"settings": {"foreground": "#b0b0b0"}
+	},
+	{
+		"name": "tag attr key",
+		"scope": "entity.other.attribute-name.html",
+		"settings": {"foreground": "#82c2ff"}
+	},
+	{
+		"name": "tag attr val",
+		"scope": [
+			"string.quoted.double.html",
+			"string.quoted.single.html",
+			"string.unquoted.html",
+		],
+		"settings": {"foreground": "#d8cb8e"}
 	},
 	// #endregion
 	// #region Python

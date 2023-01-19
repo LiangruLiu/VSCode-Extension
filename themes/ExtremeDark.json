@@ -1,4 +1,4 @@
-// 20220927
+// 20230119
 {
 "$schema": "vscode://schemas/color-theme",
 "name": "extreme-dark-theme",
@@ -21,6 +21,9 @@
 	"activityBar.inactiveForeground": "#707070", //4.2_2
 	"activityBarBadge.background": "#000000a0", //1.1_0
 	"activityBarBadge.foreground": "#d0d0d0", //4.1_2
+	"activityBarItem.profilesBackground": "#3a3a3ac0", //3.2_1
+	"activityBarItem.profilesForeground": "#707070", //4.2_2
+	"activityBarItem.profilesHoverForeground": "#d0d0d0", //4.1_2
 // 侧方列表 final
 	"badge.background": "#ffffff2a", //3.2_0
 	"badge.foreground": "#b0b0b0", //4.2_1
@@ -50,11 +53,16 @@
 	"checkbox.background": "#00000000", //1.2_1
 	"checkbox.border": "#b0b0b0", //4.2_1
 	"checkbox.foreground": "#ffffff", //4.1_1
+	"checkbox.selectBackground": "#ff00ffaa", //UNKWN
+	"checkbox.selectBorder": "#ff00ffaa", //UNKWN
 	"commandCenter.activeBackground": "#ffffff2a", //3.2_0
+	"commandCenter.activeBorder": "#00000000", //1.2_1
 	"commandCenter.activeForeground": "#ffffff", //4.1_1
 	"commandCenter.background": "#00000000", //1.2_1
 	"commandCenter.border": "#ffffff3a", //2.2_1
 	"commandCenter.foreground": "#b0b0b0", //4.2_1
+	"commandCenter.inactiveBorder": "#00000000", //1.2_1
+	"commandCenter.inactiveForeground": "#ff00ffaa", //UNKWN
 // 其他 这两项会给元素加上许多不必要的边线，但必须是注释掉而不能设为透明，否则设置页上方指示切换用户和工作区的下划线就没有了
 	// "contrastActiveBorder": //del
 	// "contrastBorder": "#00000000",
@@ -287,9 +295,13 @@
 	"errorForeground": "#ff566c", //E.1 查找未找到，设置项被弃用，等等
 	"extensionBadge.remoteBackground": "#86034b", //UNKWN
 	"extensionBadge.remoteForeground": "#f5ff6f", //UNKWN
+	"extensionButton.background": "#ffffff2a", //3.2_0 按钮和三角标签
+	"extensionButton.foreground": "#ffffff", //4.1_1
+	"extensionButton.hoverBackground": "#00000000", //1.2_1
 	"extensionButton.prominentBackground": "#ffffff2a", //3.2_0 按钮和三角标签
 	"extensionButton.prominentForeground": "#ffffff", //4.1_1
 	"extensionButton.prominentHoverBackground": "#00000000", //1.2_1
+	"extensionButton.separator": "#b0b0b0", //4.2_1
 	"extensionIcon.preReleaseForeground": "#ffffff2a", //3.2_0
 	"extensionIcon.sponsorForeground": "#b0b0b0", //4.2_1
 	"extensionIcon.starForeground": "#b0b0b0", //4.2_1
@@ -355,13 +367,18 @@
 	"list.inactiveSelectionBackground": "#646464c0", //3.1_1 激活后移开焦点
 	"list.inactiveSelectionForeground": "#ffffff", //4.1_1
 	"list.inactiveSelectionIconForeground": "#4aaeff", //4.1_3
-	"list.invalidItemForeground": "#00ffc8", //TODO 工作区中文件夹不存在
+	"list.invalidItemForeground": "#ff566c", //E.1 工作区中文件夹不存在
 	"list.warningForeground": "#e68e42", //W.1
 	"list.focusAndSelectionOutline": "#ffd000a2", //I_0 or 透明蓝色
 	"listFilterWidget.shadow": "#00000000", //1.2_1
 	"listFilterWidget.background": "#3a3a3ac0", //3.2_1
 	"listFilterWidget.noMatchesOutline": "#ff566c", //E.1
 	"listFilterWidget.outline": "#4aaeff", //4.1_3
+// 其他
+	"markdown.extension.editor.codeSpan.background": "#00000000", //1.2_1 MarkdownAllInOne插件
+	"markdown.extension.editor.codeSpan.border": "#ffffff3a", //2.2_1
+	"markdown.extension.editor.formattingMark.foreground": "#ffffff2a", //3.2_0
+	"markdown.extension.editor.trailingSpace.background": "#ffffff40", //sel
 // 右键菜单和上方菜单栏 final
 	"menu.background": "#000000d0", //1.3_1
 	"menu.border": "#707070", //2.3_0 //TODO
@@ -383,9 +400,13 @@
 	"merge.incomingHeaderBackground": "#1080c077", //O
 	"mergeEditor.change.background": "#d0802040", //TODO
 	"mergeEditor.change.word.background": "#d0802040", //TODO
+	"mergeEditor.changeBase.background": "#ff00ff40", //UNKWN
+	"mergeEditor.changeBase.word.background": "#ff00ff40", //UNKWN
 	"mergeEditor.conflict.handled.minimapOverViewRuler": "#5a5a5a", //TODO
 	"mergeEditor.conflict.handledFocused.border": "#1684d3", //TODO
 	"mergeEditor.conflict.handledUnfocused.border": "#5a5a5a", //TODO
+	"mergeEditor.conflict.input1.background": "#ff00ff40", //UNKWN
+	"mergeEditor.conflict.input2.background": "#ff00ff40", //UNKWN
 	"mergeEditor.conflict.unhandled.minimapOverViewRuler": "#b37503", //TODO
 	"mergeEditor.conflict.unhandledFocused.border": "#1684d3", //TODO
 	"mergeEditor.conflict.unhandledUnfocused.border": "#b37503", //TODO
@@ -444,11 +465,11 @@
 	"panel.background": "#000000", //1.1_1
 	"panel.border": "#0a80d1", //2.1_1
 	"panel.dropBorder": "#0a80d1", //2.1_1
-	"panelInput.border": "#ff00ffaa", //UNKWN
+	"panelInput.border": "#ffffff3a", //2.2_1 终端查找
 	"panelSection.border": "#0a80d1", //2.1_1
 	"panelSection.dropBackground": "#ffffff2a", //3.2_0
 	"panelSectionHeader.background": "#00000000", //1.2_1
-	"panelSectionHeader.border": "#ff00ffaa", //UNKWN
+	"panelSectionHeader.border": "#0a80d1", //2.1_1 将终端面板放在右侧时的分隔线
 	"panelSectionHeader.foreground": "#ffffff", //4.1_1
 	"panelTitle.activeBorder": "#ffffff", //2.3_0
 	"panelTitle.activeForeground": "#ffffff", //4.1_1
@@ -532,7 +553,7 @@
 	"statusBar.debuggingBackground": "#000000", //1.1_1
 	"statusBar.debuggingBorder": "#db7013", //W.2
 	"statusBar.debuggingForeground": "#b0b0b0", //4.2_1
-	"statusBar.focusBorder": "#ff00ffaa", //UNKWN
+	"statusBar.focusBorder": "#00000000", //1.2_1
 	"statusBar.foreground": "#b0b0b0", //4.2_1
 	"statusBar.noFolderBackground": "#000000", //1.1_1
 	"statusBar.noFolderBorder": "#0a80d1", //2.1_1
@@ -548,8 +569,6 @@
 	"statusBarItem.prominentHoverBackground": "#059618", //UNKWN
 	"statusBarItem.remoteBackground": "#00000000", //1.2_1
 	"statusBarItem.remoteForeground": "#b0b0b0", //4.2_1
-	"statusBarItem.settingsProfilesBackground": "#ff000060", //UNKWN
-	"statusBarItem.settingsProfilesForeground": "#ff0000", //UNKWN
 	"statusBarItem.warningBackground": "#8d4b00", //UNKWN
 	"statusBarItem.warningForeground": "#ffb259", //UNKWN
 // 左侧列表的大纲和自动补全候选栏中的图标 //TODO //G
@@ -683,12 +702,13 @@
 	"tree.tableOddRowsBackground": "#ffffff1a", //sel 信任列表偶数行
 // 欢迎页 final
 	"walkThrough.embeddedEditorBackground": "#ffffff1a", //3.2_0
+	"walkthrough.stepTitle.foreground": "#ffffff", //4.1_1
 	"welcomePage.background": "#000000", //1.1_1
 	"welcomePage.progress.background": "#00000000", //1.2_1
 	"welcomePage.progress.foreground": "#323232", //3.2_0
 	"welcomePage.tileBackground": "#ffffff2a", //3.2_0
+	"welcomePage.tileBorder": "#00000000", //1.2_1
 	"welcomePage.tileHoverBackground": "#00000000", //1.2_1
-	"welcomePage.tileShadow": "#ff00ffaa", //UNKWN
 // 其他 final
 	"widget.shadow": "#00000000", //1.2_1 or1.1_1
 	// "window.activeBorder" //del

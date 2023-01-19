@@ -115,7 +115,7 @@
 6. Use semi-transparent backgrounds for pop-ups, menus, etc. of list nature.
 7. Dense text is inherently cluttered, so borders are never added among the text.
 8. Code can be very colorful, so the color blocks in the text should be designed to be black and white.
-9.  Small details: Sometimes a word in the code meets multiple conditions and is highlighted layer by layer, making the text unclear instead. Then I'd intentionally design it to be darker.
+9. Small details: Sometimes a word in the code meets multiple conditions and is highlighted layer by layer, making the text unclear instead. Then I'd intentionally design it to be darker.
 
 
 ## Description
