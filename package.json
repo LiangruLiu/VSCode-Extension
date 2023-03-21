@@ -1,7 +1,7 @@
 {
 	"name": "extreme-dark-theme",
 	"displayName": "Extreme Dark Theme",
-	"description": "A dark theme for VS Code made by LLR",
+	"description": "A pure black dark theme for VS Code",
 	"categories": [
 		"Themes"
 	],
@@ -19,9 +19,9 @@
 		"type": "git",
 		"url": "https://github.com/LiangruLiu/VSCode-Extension/tree/extreme-dark-theme"
 	},
-	"version": "0.6.9",
+	"version": "0.6.10",
 	"engines": {
-		"vscode": "^1.60.0"
+		"vscode": "^1.75.0"
 	},
 	"capabilities": {
 		"untrustedWorkspaces": {
@@ -30,8 +30,7 @@
 	},
 	"main": "./sources/extension",
 	"activationEvents": [
-		"onStartupFinished",
-		"onCommand:extension.HiLLR"
+		"onStartupFinished"
 	],
 	"contributes": {
 		"themes": [
@@ -61,13 +60,7 @@
 					"default": "Original"
 				}
 			}
-		},
-		"commands": [
-			{
-				"command": "extension.hi-llr",
-				"title": "HiLLR (hello world)"
-			}
-		]
+		}
 	},
 	"__metadata": {
 		"id": "b9b4d88a-9d1d-415a-8168-aef2f4d3f526",

@@ -1,8 +1,13 @@
-// 20220708
+// 20230321
 "use strict"
 const vscode = require ("vscode")  // 请忽略提示，千万不要点击自动修复
 const fs = require ("fs")
 const path = require ("path")
+
+
+exports.getCfg = function (cfgName) {
+	return vscode.workspace .getConfiguration("ExtremeDarkTheme") .get(cfgName)
+}
 
 
 function overtype (filePath, cursorPos, content) {
@@ -38,6 +43,19 @@ exports.promptToReload = function () {
 		if (selectedAction === "Reload")
 			vscode.commands.executeCommand ("workbench.action.reloadWindow")
 	})
+}
+
+
+// 本函数无法利用vscode.extensions.onDidChange实现
+exports.isAfterUpdated = function (context) {
+	const extId = context.extension.id
+	const verKey = `${extId}.version`
+	// context.globalState.setKeysForSync ([verKey])
+	const prevVer = context.globalState.get (verKey)
+	const curVer = context.extension.packageJSON.version
+	// vscode.window.showInformationMessage (`${extId} : ${prevVer} -> ${curVer}`)
+	context.globalState.update (verKey, curVer)
+	return curVer != prevVer
 }
 
 
